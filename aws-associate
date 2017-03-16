@@ -1,767 +1,941 @@
 1
-You can use ___ and ___ to help secure the instances in your VPC
-security groups and network ACLs
+What does Amazon ElastiCache provide?
+A managed in-memory cache service
 
 2
-Fill in the blanks: ____ is a durable, block-level storage volume that you can attach to a single, running Amazon EC2 instance.
-Amazon EBS
+How many Elastic IP by default in Amazon Account?
+5
 
 3
-If I want my instance to run on a single-tenant hardware, which value do I have to set the instance's tenancy attribute to ?
-dedicated
+What is a Security Group?
+A firewall for inbound traffic, built-in around every Amazon EC2 instance.
 
 4
-What does Amazon RDS stand for?
-Relational Database Service
+The one-time payment for Reserved Instances is ____ refundable, if the reservation is cancelled.
+never
 
 5
-What does Amazon ELB stand for?
-Elastic Load Balancing
+Please select the Amazon EC2 resource which can be tagged.
+Amazon EBS snapshots
 
 6
-Is there a limit the number of groups you can have?
-Yes for all users
-
-7
-Location of instances are ____
-based on Availability Zone
-
-8
-Is there any way to own a direct connection to Amazon Web Services?
-Yes, it's called Direct Connect
-
-9
-You must assign each server to at least ____ security group
-1
-
-10
-Does Dynamic support in-place atomic updates?
-Yes
-
-11
-Is there a method in the IAM system to allow  or deny access to a specific instance?
+If an Amazon EBS volume is the root device of an instance, can I detach it without stopping the instance?
 No
 
+7
+Every user you create in the IAM system starts with ____
+no permissions
+
+8
+If you are using Amazon RDS Porvisioned IOPS storage with MySQL and Oracle database engines, you can scale the throughput of your database instance by specifying the IOPS rate from ____
+1, 000 to 10, 000
+
+9
+After an Amazon VPC instance is launched, can I change the VPC security groups it belongs to?
+Yes. You can.
+
+10
+A____________ is an individual, system, or application that interacts with AWS programmatically.
+Role
+
+11
+Select the correct statement:
+You can’t terminate, stop, or delete a resource based solely on its tags
+
 12
-What does Amazon SES stand for?
-Simple Email Service
+Amazon EC2 has no Amazon Resource Names (ARNs) because you can’t specify a particular Amazon EC2 resource in an IAM policy.
+FALSE
 
 13
-Amazon S3 doesn't automatically give a user who creates ____ permission to perform other actions on that bucket or object.
-a bucket or object
+Can I initiate a “forced failover” for my MySQL Multi-AZ DB Instance deployment?
+Yes
 
 14
-Can I attach more than  one policy to a particular entity?
+A group can contain many users. Can a user belong to multiple groups?
 Yes always
 
 15
-Fill in the blanks: A ____ is a storage device that moves data in sequences of bytes or bits (blocks). Hint:These deivces support random access and generally use buffered I/O
-block device
+Is the encryption of connections between my application and my DB Instance using SSL for the MySQL server engines available?
+Yes
 
 16
-Can I detach the primary(eth0) network interface when the instance is running or stopped?
-No. You cannot
+Which AWS instance address has the following characteristics? :”If you stop an instance, its Elastic IP address is unmapped, and you must remap it when you restart the instance.”
+EC2 Addresses
 
 17
-What's an ECU?
-Elastic Compute Unit
-
-18
-REST or Query requests are HTTP or HTTPS requests that use an HTTP verb(such as GET or POST) and a parameter namced Action or Operation that specifies the API you are calling.
+True or False: Common points of failures like generators and cooling equipment are shared across Availability Zones.
 FALSE
 
+18
+Please select the most correct answer regarding the persistence of the Amazon Instance Store
+The data on an instance store volume persists only during the life of the associated Amazon EC2 instance
+
 19
-What is the charge for the data transfer incurred in replicating data between your primary and standby?
-No charge. It is free
+Multi-AZ deployment ___________ supported for Microsoft SQL Server DB Instances.
+is planned to be in 2014
 
 20
-Does AWS Derect Connect allow you access to all Availabilities Zones within a Region?
-Yes
+Security groups act like a firewall at the instance level, whereas ____________ are an additional layer of security that act at the subnet level.
+network ACLs
 
 21
-How many types of block devices does Amazon EC2 support?
-2
+What does Amazon Elastic Beanstalk provide?
+An application container on top of Amazon Web Services.
 
 22
-What does the "Server Side Encryption" option on Amazon S3 provide?
-It encryts the files that you send to Amazon S3, on the server side.
+Is the SQL Server Audit feature supported in the Amazon RDS SQL Server engine?
+No
 
 23
-What does Amazon EBS stand for?
-Elastic Block Store
+Are you able to integrate a multi-factor token service with the AWS Platform?
+Yes, using the AWS multi-factor token devices to authenticate users on the AWS platform.
 
 24
-Within the IAM service a GROUP is regarded as a:
-A collection of users
+My Read Replica appears “stuck” after a Multi-AZ failover and is unable to obtain or apply updates from the source DB Instance. What do I do?
+You will need to delete the Read Replica and create a new one to replace it.
 
 25
-A ____ is the concept of allowing (or disallowing) an entity such as a user, group, or role some type of access to one or more resource.
-permission
+Which DNS name can only be resolved within Amazon EC2?
+Internal DNS name
+Private DNS name
 
 26
-Do the system resources on the Micro instance meet the recommended configuration for Oracle?
-Yes but only for certain situations
+Is it possible to access your EBS snapshots?
+Yes, through the Amazon EC2 APIs.
 
 27
-Will I be charged if the DB instance is idle?
-Yes
+If your DB instance runs out of storage space or file system resources, its status will change to_____ and your DB Instance will no longer be available.
+storage-full
 
 28
-To help you manage your Amazon EC2 instances, images, and other Amazon EC2 resources, you can assign your own metadata to each resource in the form of ___
-tags
+Does Amazon RDS for SQL Server currently support importing data into the msdb database?
+No
 
 29
-True or False: When you add a rule to a DB security group, you do not need to specify port number or protocol
-TRUE
-
-30
-Can I initiate a "forced failover" for my Oracle Multi-AZ DB Instance deployment?
+Does Route 53 support MX Records?
 Yes
 
+30
+Which Amazon storage do you think is the best for my database-style applications that frequently encounter many random reads and writes across the dataset?
+Amazon EBS
+
 31
+Select the correct set of steps for exposing the snapshot only to specific AWS accounts
+SelectPrivate, enter the IDs of those AWS accounts, and clickSave.
+
+32
+Is decreasing the storage size of a DB Instance permitted?
+No
+
+33
+In the context of MySQL, version numbers are organized as MySQL version = X.Y.Z. What does X denote here?
+major version
+
+34
+Can the string value of ‘Key’ be prefixed with laws?
+No
+
+35
+It is advised that you watch the Amazon CloudWatch “_____” metric (available via the AWS Management Console or Amazon Cloud Watch APIs) carefully and recreate the Read Replica should it fall behind due to replication errors.
+Replica Lag
+
+36
+By default what are ENIs that are automatically created and attached to instances using the EC2 console set to do when the attached instance terminates?
+Terminate
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#change_term_behavior
+http://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/using-eni.html#change_term_behavior
+
+37
+You can use ___ and ___ to help secure the instances in your VPC
+security groups and network ACLs
+
+38
+Fill in the blanks: ____ is a durable, block-level storage volume that you can attach to a single, running Amazon EC2 instance.
+Amazon EBS
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumes.html
+http://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/EBSVolumes.html
+
+39
+If I want my instance to run on a single-tenant hardware, which value do I have to set the instance's tenancy attribute to ?
+dedicated
+https://aws.amazon.com/ec2/dedicated-hosts/
+
+40
+What does Amazon RDS stand for?
+Relational Database Service
+
+41
+What does Amazon ELB stand for?
+Elastic Load Balancing
+
+42
+Is there a limit the number of groups you can have?
+Yes for all users
+http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html
+
+43
+Location of instances are ____
+based on Availability Zone
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-regions-availability-zones
+
+44
+Is there any way to own a direct connection to Amazon Web Services?
+Yes, it's called Direct Connect
+https://aws.amazon.com/directconnect/
+
+45
+You must assign each server to at least ____ security group
+1
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#default-security-group
+
+46
+Does Dynamic support in-place atomic updates?
+Yes
+https://aws.amazon.com/dynamodb/faqs/
+
+47
+Is there a method in the IAM system to allow  or deny access to a specific instance?
+No
+https://aws.amazon.com/blogs/security/demystifying-ec2-resource-level-permissions/
+
+48
+What does Amazon SES stand for?
+Simple Email Service
+
+49
+Amazon S3 doesn't automatically give a user who creates ____ permission to perform other actions on that bucket or object.
+a bucket or object
+http://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_UseCases.html
+
+50
+Can I attach more than  one policy to a particular entity?
+Yes always
+http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
+
+51
+Fill in the blanks: A ____ is a storage device that moves data in sequences of bytes or bits (blocks). Hint:These deivces support random access and generally use buffered I/O
+block device
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html
+
+52
+Can I detach the primary(eth0) network interface when the instance is running or stopped?
+No. You cannot
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html
+
+53
+What's an ECU?
+Ec2 Compute Unit
+https://aws.amazon.com/ec2/faqs/
+
+54
+REST or Query requests are HTTP or HTTPS requests that use an HTTP verb(such as GET or POST) and a parameter namced Action or Operation that specifies the API you are calling.
+FALSE
+http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Query-Requests.html
+
+55
+What is the charge for the data transfer incurred in replicating data between your primary and standby?
+No charge. It is free
+https://aws.amazon.com/rds/faqs/
+
+56
+Does AWS Derect Connect allow you access to all Availabilities Zones within a Region?
+Yes
+https://aws.amazon.com/directconnect/faqs/
+
+57
+How many types of block devices does Amazon EC2 support?
+2
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html
+
+58
+What does the "Server Side Encryption" option on Amazon S3 provide?
+It encryts the files that you send to Amazon S3, on the server side.
+https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingServerSideEncryption.html
+
+59
+What does Amazon EBS stand for?
+Elastic Block Store
+https://aws.amazon.com/ebs/
+
+60
+Within the IAM service a GROUP is regarded as a:
+A collection of users
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html
+
+61
+A ____ is the concept of allowing (or disallowing) an entity such as a user, group, or role some type of access to one or more resource.
+permission
+http://docs.aws.amazon.com/IAM/latest/UserGuide/access_permissions.html
+
+62
+Do the system resources on the Micro instance meet the recommended configuration for Oracle?
+Yes but only for certain situations
+http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html#Concepts.DBInstanceClass.Previous
+
+63
+Will I be charged if the DB instance is idle?
+Yes
+https://aws.amazon.com/rds/faqs/
+
+64
+To help you manage your Amazon EC2 instances, images, and other Amazon EC2 resources, you can assign your own metadata to each resource in the form of ___
+tags
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html
+
+65
+True or False: When you add a rule to a DB security group, you do not need to specify port number or protocol
+TRUE
+http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html
+
+66
+Can I initiate a "forced failover" for my Oracle Multi-AZ DB Instance deployment?
+Yes
+https://aws.amazon.com/rds/faqs/#46
+
+67
 Amazon EC2 provides a repository of public data sets that can be seamlessly integrated into AWS cloud-based applicatons. What is the monthly charge for using the public data sets?
 There is no charge for using the public data sets
 
-32
+68
 In the Amazon RDS Oracle DB engine, the Database Diagnostic Pack and the Database Tunning Pack are only available with ___
 Oracle Enterprise Edition
 
-33
+69
 Amazon RDS sopports SOAP only throuth ____
 HTTPS
 
-34
+70
 Without ____, you must either create multiple AWS accounts-each whith its own billing and subsriptions to AWS products-or your employees must share the security credentials of a single AWS accountl
 Amazon IAM
 
-35
+71
 The Amazon EC2 web service can be accessed using the ____ web services messaging protocol. This interface is descibed by a Web Services Description Language (WSDL) document
 SOAP
 
-36
+72
 HTTP Query-based requests are HTTP requests that use the HTTP verb GET or POST and a Query parameter named ____
 Action
 
-37
+73
 Amazon RDS creates an SSL certificate and installs the certificate on the DB instance when Amazon RDS provisions the instance. These certificates are signed by a certificate authority. The ____ is stored at https://rds.amazonaws.com/doc/rds-ssl-ca-cert.pem
 public key
 
-38
+74
 What is the name of licensing model in which I can use youre existing Oracle Database licenses to run Oracle deployments on Amazon RDS?
 Bring Your Own License
 
-39
+75
 ____ embodies the "share-nothing" architecture and essentially involves breaking a larget database into several smaller databases. Common ways to split a database inclue 1)spliting tables that are not joined in the same query onto different hosts or 2) duplicating a table across multiple hosts and then using a hashing algorithm to determine which host receives a given update
 Sharding
 
-40
+76
 When you resize the Amazon RDS DB instance, Amazon RDS will perform the upgrade during the next maintenance window. If you want the upgrade to be performed now, rather than waiting for the maintenance window, specify the ____ option.
 ApplyImmediately
 
-41
+77
 Does Amazon Route 53 support NS Records?
 Yes, it supports Name Server records
 
-42
+78
 The SQL Server ____ feature is an efficient means of copying data from a source database to your DB instance. It writes the data that you specify to a data file, such as an ASCII file.
 bulk copy
 
-43
+79
 When using consolidated billin there are two account types. What are they?
 Paying account and Linked account
 
-44
+80
 A ____ is a document that provides a formal statement of one or more permissions.
 policy
 
-45
+81
 In the Amazon RDS which uses the SQL Server engine, what is the maximum size for a Microsoft SQL Server DB Instance with SQL Server Express edition?
 10 GB per DB
 
-46
+82
 Regarding the attaching of ENI to an instance, what does 'warm attach' refer to?
 Attaching an ENI to an instance when it is stopped
 
-47
+83
 If I scale the storage capacity provisioned to my DB instance by mid of a billing month, how will I be charged?
 On a proration basis
 
-48
+84
 You can modify the backup retention period; valid values are 0 (for no backup retention) to a maxximum of ____ days.
 35
 
-49
+85
 A Provisioned IOPS volume must be at least ____ GB in size
 10
 
-50
+86
 Will be alerted when automatic failover occurs?
 Yes
 
-51
+87
 How can an EBS volume that is currently attached to an EC2 instance be migrated from one Availability Zone to another?
 Create a snapshot of the volume, and create a new volume from the snapshot in the other AZ
 
-52
+88
 If you're unable to connect via SSH to your EC2 instance, which of the following should you check and possibly correct to restore connectivity?
 Adjust the instance's Security Group to permit ingress traffic over port 22 from your IP
 
-53
+89
 Which of the following features ensures even distribution of traffic to Amazon EC2 instances in multiple Availability Zones registered with a load balancer?
 Elastic Load Balancing cross-zone load balancing
 
-54
+90
 You are using an m1.small EC2 instance  with one 300 GB EBS volume to host a relational database. You determined that write throughput to the database needs to be increased. Which of the following approaches can help achieve this?
 Use an array of EBS volumes
 Increase the size of the EC2 instance
 
-55
+91
 After launching an instance that you intend to serve as a NAT device in a public subnet you modify your route tables to have the NAT device be the target of internet bound traffic of your private subnet. When you try and make an outbound connection to the internet from an instance in teh private subnet, you are not successful. Which of the following steps could resolve the issue?
 Disabling the Source/Destination Check attribute on the NAT instance
 
-56
+92
 You are building a solution for a customer to extend their on-premises data center to AWS. The customer requires a 50-Mbps dedicated and private connection to their VPC. Which AWS product or feature satisfies this requirement?
 AWS Direct Connect
 
-57
+93
 You have multiple Amazon EC2 instances running in a cluster across multiple Availability Zones within the same region. What combinatiion of the following should be used to ensure the highest network performance (packets per second), lowest latency, and lowest jitter?
 Amazon EC2 placement groups
 Enhanced networking
 Amazon HVM AMI
 
-58
+94
 When using the following AWS services, which should be implemented in multiple Availability Zones for high availibility solutions?
 Amazon Elastic Compute Cloud(EC2)
 Amazon Elastic Load Balancing
 
-59
+95
 You have a video transcodeing application running on Amazon EC2. Each instance polls a queue to find out which video should be transcoded, and then runs a transcoding process. If this process is interrupted, the video will be transcoded by another instance based on the queuing system. You hava a large backlog of videos which need to be transcoded and would like to reduce this backlog by adding more instances. You will need these instances only until the backlog is reduced. Which type of Amazon EC2 instances should you use to reduce the backlog in the most cost efficient way?
 Spot instances
 
-60
+96
 You have an EC2 Security Group with several running EC2 instance. You change the Security Group rules to allow inbound traffic on a new port and protocol, and launch several new instances in the same Security Group. The new rules apply
 Immediately to all instances in the security group
 
-61
+97
 Which services allow the customer to retain full administrative privileges of the underlying EC2 instances?
 Amazon Elastic Map Reduce
 AWS Elastic Beanstalk
 
-62
+98
 A company is building a two-tier web application to serve dynamic transaction-based content. The data tier is leveraging an Online Transacional Processing (OLTP) database. What services should you leverage to enable an elastic and scalable web tier?
 Elastic Load Balancing, Amazon EC2, and Auto Scaling
 
-63
+99
 Your application provides data transformation servies. Files containing data to be transformed are first upload to Amazon S3 and then transformed by a fleet of spot EC2 instance. Files submitted by your premium cunstomers must be transformed with the highest priority. How should you implement such a system?
 Use tow SQS queues, one for high priority messages, the other for default priority. Transformation instances first poll the high priority queue; if there is no message, they poll the default priority queue
 
-64
+100
 Which technique can be used to integrate AWS IAM with an on-premise LDAP(Lightweight Directory Access Protocol) directory service?
 Use SAML(Security Assertion Markup Language) to enable single sign-on between AWS and LDAP
 
-65
+101
 Which of the following are characteristics of Amazon VPC subnets?
 Each subnet maps to a single Availability Zone
 By default, all subnets can route between each other, whether they are private or public
 
-66
+102
 A customer is leveraging Amazon Simple Storage Service in eu-west-1 to store static content for a web-based property. The customer is storing objects using the Standard Storage class. Where are the customers objects replicated?
 Multiple facilities in eu-west-1
 
-67
+103
 Your web application front end consists of multiple EC2 instances behind an Elastic Load Balancer. You configured ELB to perform health checks on these EC2 instances, if an instance fails to pass health checks, which statement will by true?
 The ELB stops sending traffic to the instance that failed its health check
 
-68
+104
 In AWS which security aspects are the customer's responsibility?
 Security Group and ACL(Access Control List) settings
 Patch management on the EC2 instance's operating system
 Life-cycle management of IAM credentials
 Encryption of EBS volumes
 
-69
+105
 You have a web application running on six Amazon EC2 instances, consuming about 45% of resources on each instance. You are using auto-scaling to make sure that six instances are running at all times. The number of requests this application processes is consistent and does not experience spikes. The application is critical  to your business and you want high availability at all times. You want the load to be distributed evently between all instances. You alse want to use the same Amazon Machine  Image for all instances. Which of the following architectural choices should you make?
 Deploy 3 EC2 instances in one availability zone and 3 in another availability zone and use Amazon Elastic Load Balancer
 
-70
+106
 You have  decided to change the instance type for instances running in your application tier that is using Auto Scaling. In which area below would you change the instance type definition?
 Auto Scaling launch configuration
 
-71
+107
 When an EC2 EBS-backed(EBS root) instance is stopped, what happens to the data on any ephemeral store  volumes?
 Data will be deleted and will no longer be accessible
 
-72
+108
 Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security keys are allowed to be stored on the EC2 instance
 Create an IAM Role that allows write access to the DynamoDB table
 Launch an EC2 instance with the IAM Role included in the launch configuration
 
-73
+109
 When you put  objects in Amazon S3, what is the indication that an object was successfully stored?
 A HTTP 200 result code and MD5 checksum, taken together, indecate that the operation was successful
 
-74
+110
 What is one key difference between an Amazon EBS-backed and an instance-store backed instance?
 Amazon EBS-backed instances can be stopped and restarted
 
-75
+111
 A company wants to implement their website in a vritual private cloud. The web tier will use an Auto Scaling group across multiple Availability Zones(AZs). The database will use Multi-AZ RDS MYSQL and should not be publicly accessible. What is the minimum number of subnets that need to be configured in the VPC?
 4
 
-76
+112
 You have launched an Amazon Elastic Compute Cloud instance into a pulbic  subnet with a primary private IP address assigned, an internet gateway is attached to the VPC, and the public route table is configured to send all insternet-based traffic to the internet gateway. The instance security group is set to allow all outbound traffic but cannot access the internet. Why is the Internet unreachable from this instance?
 The instance does not have a public IP address
 
-77
+113
 You launch an Amazon EC2 instance without an assigned AWS identity and Access Management(IAM) role. Later, you decide  that the instance should be running with an IAM role. Which action must you take in order to have a running Amazon EC2 instance with an IAM role assgined to it?
 Create an image of the instance, and use this image to launch a new instance with the desired IAM role assigned
 
-78
+114
 How can the domain's zone apex, for example , "myzoneapexdomain.com", be pointed towards an Elastic Load Balancer?
 By using an Amazon Route 53 Alias record
 
-79
+115
 An instance is launched into a VPC subnet with the network ACL configured to allow all in bound traffic  and deny all outbound traffic. The instance's security group is configured  to allow SSH from any IP address and deny all outbound traffic. What changes need to be made to allow SSH access to the instance?
 The outbound network ACL needs to be modified to allow outbound traffic
 
-80
+116
 For which of the following use cases are Simple Workflow Service (SWF) and Amazon EC2 an appropriate solution?
 Managing a multi-step and multi-decision checkout process of an e-commerce website
 Orchestrating the execution of distributed and auditable business processes
 
-81
+117
 A customer wants to leverage Amazon Simple Storage Service (S3) and Amazon Glacier as part of their backup and archive infrastructure. The customer plans to use third-party software to support this integration. Which approach will limit the access of the third party software to only the Amazon S3 bucket named "companybackup"?
 A custom IAM user policy limited to the Amazon S3 API in "company-backup"
 
-82
+118
 A client application  requires operating system privileges  on a relational database server. What is an appropriate configuration for a highly available database architecture?
 Amazon EC2 instances in a replication configuration utilizing two different Availability Zones
 
-83
+119
 What is a placement group?
 A feature that enables EC2 instances to interact with each other via high bandwidth, low latency connections
 
-84
+120
 A company has a workflow that sends video files from their on-promise system to AWS for transcoding. They use EC2 worker instances that pull transcoding jobs from SQS.Why is SQS an appropriate service for this scenario?
 SQS helps to facilitate  horizontal scaling of encoding tasks
 
-85
+121
 When creation of an EBS snapshot is initiated, but not completec, the EBS volume:
 Can be used while the snapshot is in progress
 
-86
+122
 What  are characteristics of Amazon S3?
 S3 allows you to store unlimited amounts of data
 Objects are directly accessible via a URL
 
-87
+123
 Per the AWS Acceptable Use Policy, penetration testing of EC2 instances:
 May be performed by the customer on their own instances with prior authorization from AWS
 
-88
+124
 You are working with a customer who has 10 TB of archival data that they want to migrate to Amazon Glacier.The customer has a 1-Mbps connection to the Internet. Which service or feature provides the fastest method of getting the data into Amazon Glacier?
 AWS Import/Export
 
-89
+125
 How can you secure data at rest on a EBS volume?
 Use an encrypted file system on top of the EBS volume
 
-90
+126
 A customer needs to capture all client connection information from their load balancer every five minutes. The company wants to use this data for analyzing traffic patterns and troubleshooting  their applications. Which of the following options meets the customer requirements?
 Enable access logs on the load balancer
 
-91
+127
 If you want to launch Amazon Elastic Compute Cloud instances and assign each instance a predetermined private IP address you should:
 Launch the instances in the Amazon Virtual  Private Cloud
 
-92
+128
 You need to configure an Amazon S3 bucket to serve static assets for your public-facing web application. Which methods ensure that all objects uploaded to the bucket are set to public read?
 Set permissions on the object to public read during upload
 Configure the bucket policy to set all objects to public read
 
-93
+129
 A company is storing data on Amazon Simple Storge Service. The company's security policy mandates that data is encrypted at rest. Which of the following methods can achieve this?
 Use Amazon S3 server-side encryption with AWS Key Management Service managed keys
 Use Amazon S3 server-side encryption with customer-provided keys
 Encrypt the data on the client-side before ingesting to Amazon S3 using their own master key
 
-94
+130
 Which procedure for backing up a relatinal database on EC2 that is using a set of RAIDed EBS volumes for storage minimizes the time during which the database cannot be written to and results in a consistent backup?
 1.Suspend disk I/O  2.Start EBS snapshot of volumes 3.Resume dist I/O
 
-95
+131
 A company needs to deploy virtual desktops to its customers in a virtual private cloud, leveraging existing security controls. Which set of AWS services and features will meet the company's requirements?
 Virtual Private Network connection, AWS Directory Services, and Amazon Workspaces
 
-96
+132
 After creating a new IAM user which of the following must be done before they can successfully make API calls?
 Create a set of Access Keys for the user
 
-97
+133
 Which of the following are valid statements about Amazon S3?
 A successful response to a PUT request only occurs when a complete object is saved
 S3 provides eventual consistency for overwrite PUTS and DELETES
 
-98
+134
 You are configuring your company's application to use Auto Scaling and need to move user state information. Which of the following AWS services provides a shared data store with durability and low latency?
 Amzon DynamoDB
 
-99
+135
 Which features can be used to restrict access to data in S3?
 Set an S3 ACL on the bucket or the object
 Set an S3 bucket policy
 
-100
+136
 Which of the following are characteristics of a reserved instance?
 It can be migrated across Availability Zones
 It is specific to an instance Type
 It can be used to lower Total Cost of Owership (TCO) of a system
 
-101
+137
 Which Amazon  Elastic Compute Cloud feature can you query from within the instance to access instance properties?
 instance metadata
 
-102
+138
 Which of the following requires a custom CloudWatch metric to monitor?
 Memory Utilization of an EC2 instance
 
-103
+139
 You are tasked with setting up a Linux bastion host for access to Amazon EC2 instances running in your VPC. Only clients connecting from the corporate extenal public IP address 72.34.51.100 should have SSH access to the host. Which option will meet the customer requirement?
 Security Group Inbound Rule: Protoco - TCP Port Range - 22, Source 72.34.51.100/32
 
-104
+140
 A customer needs corporate IT governance and cost oversight of all AWS  resources consumed by its divisions. The divisions want to maintain administrative control of the discrete AWS resources they consume and keep those resources separate from the resources of other divivsions. Which of the following options, when used together will support the autonomy/control of divisions while enabling corporate IT to maintain governance and cost oversight?
 Enable IAM cross-account access for all corporate IT adminstrators in each child account
 Use AWS Consolidated Billing to link the divisions' accounts to a parent corporate account
 
-105
+141
 You run an ad-supported photo sharing website using S3 to serve photos to vistors of your site. At some point you find out that other sites have been linking to the photos on your site, causing loss to your business. What is an effective method to mitigate this?
 Remove public read access and use signed URLs with expiry dates
 
-106
+142
 You are working with a customer who is using Chef configuration management in their data center. Which service is desiged to let the customer leverage exsiting Chef recipes in AWS?
 AWS OpsWorks
 
-107
+143
 An Auto-Scaling group spans 3 AZs and currently has 4 running EC2 instances. When Auto Scaling needs to terminate an EC2 instance by default, AutoScaling will:
 Send an SNS notification, if configured to do so 
 Terminate an instance in the AZ which currently has 2 running EC2 instances
 
-108
+144
 When an EC2 instance that is backed by an S3-based AMI is terminated, what happens to the data on the root volume?
 Data is automatically deleted
 
-109
+145
 In order to optimize performance for a compute cluster that requires low inter-node latency, which of the following feature should you use?
 Placement Groups
 
-110
+146
 You have an environment that consists of a  public subnet using Amazon VPC and 3 instances that are running in this subnet. These three instances can successfully communicate with other hosts on the internet. You launch a fourth instance in the same subnet, using the same AMI and security group configuration you used for the others, but find that this instance cannot be accessed from the internet. What should you do to enable Internet access?
 Assign an Elaltic IP address to the fourth instance
 
-111
+147
 You have a distributed application that periodically processes large volumes of data across multiple Amazon EC2 instances. The application is designed to recover gracefully from Amazon EC2 instance failures. You are required to accomplish this task in the most cost-effective way.Which of the following will meet your requirements?
 Spot instances
 
-112
+148
 Which of the following are true regarding AWS CloudTrail?
 CloudTrail is enabled globally
 CloudTrail is enabled on a per-region basis
 Logs can be delivered to a single Amazon S3 bucket for aggregation
 
-113
+149
 You have a content management system running on an Amazon EC2 instance that is  approaching 100% CPU utilizition. Which option will reduce load on the Amazon EC2 instance?
 Create an Auto Scaling group from the instance using the CreateAutoScalingGroup action
 
-114
+150
 You have a load balancer configured for VPC, and all bakc-end Amazon EC2 instances are in service. However, your web browser times out when connectiong to the load balancer's DNS name. Which options are probable causes of this behavior?
 The load balancer was not configured to use a public subnet with an Internet gateway configured
 The security groups or network ACLs are not property configured for web traffic
 
-115
+151
 A company needs to deploy services to an AWS region which they have not previously used. The company currently has an AWS identiy and Access Management (IAM)  role for the Amazon EC2 instances, which permits the instance to have access to Amazon DynamoDB. The company wants their EC2 instances in the new region to have the same privileges. How should the company achieve this?
 Assing the existing IAM role to the Amazon EC2 instances in the new region
 
-116
+152
 Which of the following notification endpoints or clients are supported by Amazon Simple Notification Service?
 Email
 Short Message Service
 
-117
+153
 Which set of Amazon S3 features helps to prevent and recover from accidental data loss?
 Object versioning and Multi-factor authentication
 
-118
+154
 A company needs to monitor the read and write IOPs metrics for their AWS MySQL RDS instance and send real-time alerts to their operations team. Which AWS services can accomplish this?
 Amazon CloudWatch
 Amazon Simple Notification Service
 
-119
+155
 A company is preparing to give AWS Management Console access to developers Company policy mandates identity feferation and role-based access control. Roles are currently assigned using groups in the corporate Active Directory. What combination of the following will give developers access to the AWS console?
 AWS Directory Service AD Connector
 AWS Identity and Access Management roles
 
-120
+156
 You are deployig an application to collect votes for a very popular televesion show. Millions of users will submit votes using mobile devices. The votes must be collected into a durable, scalable, and highly available data store for real-time public tabulation. Which service should you use?
 Amzon Kinesis
 
-121
+157
 The Trusted Advisor service provides insight regarding which four categories of an AWS account?
 Performance, cost optimization, security, and fault tolerance
 
-122
+158
 You are deploying an application to trach GPS coordinates of delivery trucks in the United States. Coordinates are transmitted from each delivery truch once every three seconds. You need to design an architecture that will enable real-time processing of these coordinates from multiple consumers. Which service should you use to implement data ingestion?
 Amazon Kinesis
 
-123
+159
 A photo-sharing service stores pictures in Amazon Simple Storage Service and allows application sign-in using an OpenID Connect-compatible identity provider. Which AWS Security Token Service approach to temporary access should you use for the Amazon S3 operations?
 Web Identity Federation
 
-124
+160
 You have an application running on an Amazon Elastic Compute Cloud instance, that uploads 5 GB video objects to Amazon Simple Storage Service. Video uploads are taking longer than expected, resulting in poor application performance. Which method will help improve performance of your application?
 Use Amazon S3 multipart upload
 
-125
+161
 A customer wants to track access to their Amazon Simple Storage Service buckets and also use this information for their internal security and access audits. Which of the following will meet the Customer requirement?
 Enable server access loging for all required Amazon S3 buckets
 
-126
+162
 A company is deploying a two-tier, highly available web application to AWS. Which service provides durable storage for static content while utilizing lower Overall CPU resources for the web tier?
 Amazon S3
 
-127
+163
 You are desiging a web application that stores static assets in an Amazon Simple Storage Service bucket. You expect this bucket to immediately receive over 150 PUT requests per second. What should you do to ensurce optimal performance?
 Add a random prefix to the key names
 
-128
+164
 When will you incur costs with an Elastic IP address(EIP)?
 When it is allocated and associated with a stopped instance
 
-129
+165
 A company has an  AWS account that contains three VPCs(Dev, Test, and Prod) in the same region. Test is peered to both Prod and Dev. All VPCs have non-overlapping CIDR blocks. The company wants to push minor code releases from Dev to Prod to speed up time to market. Which of the following options helps the company accomplish this?
 Create a new peering connection Between Prod and Dev along with appropriate routes
 
-130
+166
 Which of the following intance types are available as Amazon EBS-backed only?
 General purpose T2
 Compute-optimized C3
 
-131
+167
 A customer is hosting their company website on a cluster of web servers that are behind a public-facing load balancer. The customer also uses Amazon Route 53 to manage their public DNS. How should the customer configure the DNS zone apex record to point the load balancer?
 Create an A record aliased to the load balancer DNS name
 
-132
+168
 You try to conect via SSH to a newly created Amazon EC2 instance and get one of the following error messages:
 "Network error:Connectiong timed out" or "Error conectiong to [instance], reason:-> Connection timed out: connect,"
 You have confirmed that the network and security group rules are configured correctly and the instance is passing status checks. What steps should you take to identity the source of the behavior?
 Verify that the private key file corresponds to the Amazon EC2 key pair assigned at launch
 Verify that you are connecting with the appropriate user name for you AMI
 
-133
+169
 A customer is running a multi-tier web application farm in a virtual private cloud(VPC) that is not connected to their corporate network. They are connecting to the VPC over the Internet to manage all of their Amazon EC2 instances running in both the public and private subnets. They have only authorized the bastion-security-group with Microsoft Remote Desktop Protocol(RDP) access to the application instance security groups, but the company wants to further limit administrative access to all of the instances in the VPC. Which of the following Bastion deployment scenarios will meet this requirement?
 Deploy a Windows Bastion host with an auto-aasinged Public IP address in the public subnet, and allow RDP access to the bastion from only the corporate public IP addresses
 
-134
+170
 A customer has a single 3-TB volume on-premises that is used to hold a large reopsitory of images and print layout files. This reposity is growing at 500 GB a year and must be presented as a single logical volume. The customer is becoming increasingly constrained with their local storage capacity and wants an off-site backup of this data, while maintaining low-latency access to their frequently accessed data. Which AWS Storage Gateway configuration meets the customer requirements?
 Gateway-Cached volumes with snnapshots scheduled to Amazon S3
 
-135
+171
 You are building an automated transcription service in which Amazon EC2 worker instances process and uploaded audiio file and generate a text file. You must store both of these files in the same duralbe storage until the text file is retrieved. You do not know what the storage capacity requirements are. Which storage option is both cost-efficient and scalable?
 A single Amaon S3 bucket
 
-136
+172
 You need to pass a custom scripts to new Amazon Linux instances created in your Auto Scaling group. Which feature allows you to accomplish this?
 User data
 
-137
+173
 Which of the following services natively encryts data at reset within an AWS region?
 AWS Storage Gateway
 Amazon Glacier
 
-138
+174
 A company is building software on AWS that requires access to various AWS services. Which configuration should be used to ensure mat AWS credentials(i.e., Access Key ID/Secret Access Key combination) are not compromised?
 Assgin an IAM role to the Amazon EC2 instance
 
-139
+175
 Which  of the following are true regarding encrypted Amazon Elastic  Block Store(EBS) volumes?
 Suppored on all Amaon EBS volume types
 Snapshots are automatically encrypted
 
-140
+176
 A company is deploying a new two-tier web application in AWS. The company has limited staff and requires high availability, and the application requires complex queries and table joins. Which configuration provides the solution for the company's requirments?
 Amazon RDS for MySQL with Multi-AZ
 
-141
+177
 A t2.medium EC2 instance type must be launched with what type of Amazon Machine Image?
 An Amazon EBS-backed Hardware Virtual Machine AMI
 
-142
+178
 You manually launch a NAT AMI in a public subnet. The network is properly configured. Security groups and network access control lists are property configured. Instances in a private subnet can access the NAT. The NAT can access the Internet. However, private instances cannot access the Internet. What additional step is required to allow access from the private instances?
 Disable Source/Destination Check on the NAT instance
 
-143
+179
 Which of the following  approaches privides the lowest cost for Amazon Elastic Block Store snapshots while giving you the ability to fully restore data?
 Maintain a single snapshot the latest snapshot is both Incremental and complete
 
-144
+180
 An existing application stores sensitive information on a non-boot Amazon EBS data volume attached to an Amazon Elastic Compute Cloud instance. Which of the following approaches would protect the sensitive data on an Amazon EBS volume?
 Snapshot the current Amazon EBS volume. Restore the snapshot to a new, encrypted Amazon EBS volume.Mount the Amazon EBS volume
 
-145
+181
 A US-based company is expanding their web presence into Europe. The company wants to extend their AWS infrastructure from Northern Virginia (us-east-1) into the Dublin (eu-west-1) region. Which of the following options would enable an equivalent experience for users on both continents?
 Use Amazon Route 53, and apply a geolocation routing policy to distribute traffic across both regions
 
-146
+182
 Which of the following are use cases for Amazon DynamoDB?
 Managing web sessions
 Storing JSON documents
 Storing metadata for Amazon S3 objects
 
-147
+183
 A customer implemented AWS Storage Gateway with a gateway-cached volume at their main office. An event takes the link between the main and branch office offline. Which methods will enable the branch office to access their data?
 Launch a new AWS Storage Gateway instance AMI in Amazon EC2, and restore from a gateway snapshot.
 Create an Amazon EBS volume from a gateway snapshot, and mount it to an Amazon EC2 instance
 Launch an AWS Storage Gateway virtual iSCSI device at the branch office, and restore from a gateway snapshot
 
-148
+184
 A company has configured and peered two VPCs: VPC-1 and VPC-2. VPC-1 contains only private subnets, and VPC-2 contains only public subnets. The company uses a single AWS Direct Connect connections and private virtual interface to connect their on-premises network with VPC-1. Which two methods increases the fault tolerance of the connection to VPC-1?
 Establish a hardware VPN over the internet between VPC-1 and the on-premises network
 Establish a new AWS Direct Connect connection and private virtual interface in the same AWS region as VPC-1
 
-149
+185
 What is the minimum time interval for the data that Amazon CloudWatch receives and aggregates?
 One minute
 
-150
+186
 Which of the following statements are true about Amazon Route 53 resource records?
 An Alias record can map one DNS name to another Amazon Route 53 DNS name
 An Amazon Route 53 CNAME record can point to any DNS record hosted anywhere
 
-151
+187
 A 3-tier e-commerce web application is current deployed on-premises and will be migrated to AWS for greater scalability and elasticity. The web server currently shares read-only data using a network distributed file system. The app server tier uses a clustering mechanism for discovery and shared session state that depends on IP multicast. The database tier uses shared-storage clustering to provide database fall over capability, and uses several read slaves for scaling. Data on all servers and distributed file system directory is backed up weekly to off-site tapes. Which AWS storage and database architecture meets the requirements of the application?
 Web servers, store read-only data in S3, and copy from S3 to root volume at boot time App servers snare state using a combination or DynamoDB and IP unicast Database use RDS with multi-AZ deployment and one or more Read Replicas Bachup web and app servers backed up weekly via Mils database backed up via DB snapshots
 
-152
+188
 Your customer wishes to deploy an enterprise application to AWS which will consist of several web servers, several application servers and a small(50GB) Oracle database information is stored, both in the database and the file systems of the various servers. The backup system must support database recovery whole server and whole disk restores, and individual file restores with a recovery time of no more than two hours. They have chosen to use RDS Oracle as the database. Which backup architecture will meet these requirements?
 Backup RDS using automated daily DB backups. Backup the EC2 instances using AMIs and supplement with file-level backup to S3 using traditional enterprise backup software to provide file level restore 
 
-153
+189
 Youre company has HQ in Tokyo and branch offices all over the world and is using a logistics software with a multi-reginal deployment on AWS in Japan, Europe and US.The logistic software has a 3-tier architecture and currently uses MySQL 5.6 for data persistence. Each region has deployed its own database. In the HQ region you run an hourly batch process reading data from every region to compute cross-reginal reports that are sent by email to all offices this batch process must be completed as fast as possible to quickly optimize logistics how do you build the database architecture in order to meet the requirements?
 For each regional deployment, use RDS MySQL with a master in the region and a read replica in the HQ region
 
-154
+190
 A customer has a 10 GB AWS Direct Connect connection to an AWS region where they have a web application hosted on Amazon Elastic Computer Cloud(EC2). The application has dependencies on an on-premises mainframe database that uses a BASE (Basic Available. Sort stale Eventual consistency) rather than an ACID(Atomicity.Consistency isolation. Durability) consistency model. The applicaion is exhibiting undesirable behavior because the database is not able to handle the volume of writes. How can you reduce the load on your on-premises database resources in the most cost-effective way?
 Modify the application  to write to an Amazon SQS queue and develop a worker process to flush the queue to the on-premises database
 
-155
+191
 Company B is launching a new game app for mobile devices.  Users will log into the game  using their existing social media account to streamline data capture. Company B would like to directly save player data and scoring information from the mobile app to a DynamoDS table named Score Data. When a user saves their game the progress data will be stored to the Game state S3 bucket. What is the best approach for storing data to DynamoDB and S3?
 Use temporary security credentials that assume a role providing access to the Score Data DynamoDB table and the Game State S3 bucket using web identity feferation
 
-156
+192
 Your company plans to host a large donation website on Amazon Web Services. You anticipate a large and undetermined amount of traffic that will create many database writes. To be certain that you do not drop any writes to a database hosted on AWS. Which service should you use?
 Amazon Simple Queue Service(SQS) for capturing the writes and draining the queue to write to the database
 
-157
+193
 You have launched an EC2 instance with four(4) 500 GB EBS Provisioned IOPS volumes attached. The EC2 instance is EBS-Optimized and supports 500 Mbps throughput between EC2 and EBS. The two EBS volumes are configured as a single RAID device, and each Porvisioned IOPS volume is provisioned with 4000 IOPS (4000 16KB reads or writes) for a total of 16000 random IOPS on the instance. The EC2 instance initially delivers the expected 16000 IOPS random read and write performance.Somtime later in order to increase the total random I/O performance of the instance, you add an additional two 500 GB EBS Provisioned IOPS volumes to the RAID. Each volume is provisioined to 4000 IOPS like the original four for a total of 24000 IOPS on the EC2 instance. Monitoring shows that the EC2 instance CPU utilization increased from 50% to 70%. But the total random IOPS measured at the instance level does not increase at all. What is the problem and a valid solution?
 The standard EBS instance root volume limits the total IOPS rate, change the instant root volume to also be a 500GB 4000 Provivioned IOPS volume
 
-158
+194
 You have recently joined a startup company building sensors to measure street noise and air quality in urban areas. The company has been running a pilot deployment of around 100 sensors for 3 months. Each sensor uploads 1KB of sensor data every minute to a backend hosted on AWS. During the pilot, you measured a peak or 10 IOSP on the database, and you stored an average of 3GB of sensor data per month in the database. The current deployment consists of a load-balanced auto scaled ingestion layer using EC2 instances and a PostgreSQL RDS database with 500GB standard storage. The pilot is considered a success and your CEO has managed to get the attention or some potential investors. The business plan requires a deployment of at least 100K sensors which needs to be supported by the backend. You alse need to store sensor data for at least two years to be able to compare year over year improvements. To secure funding, you have to make sure that the platform meets these requrements and leaves room for further scaling. Which setup will meet the requirments?
 Ingest data into a DynamoDB table and move old data to a Redshift cluster
 
-159
+195
 Your company is in the process of developing a next generation pet collar that collects biometric information to assist famlies with promoting healthy lifestyles for their pets. Each collar will push 30kb of biometric data in JSON format every 2 seconds to a collection platform that will process and analyze the data providing health trending information back to the pet owners and veterinarians via a web portal. Management has tasked you to architect the collection platform ensuring the following requirements are met.Provide the ability for real-time analytics of the inbound biometric data. Ensure processing of the biometric data is highly durable, Elastic and parallel.The result of the analytic processing should be persisted for data mining. Which architecture outlined below win meet the initial requirements for the collection platform?
 Utilize Amazon Kinesis to collect the inbound sensor data, analyze the data with Kinesis clients and save the result to a Redshift cluster using EMR.
 
-160
+196
 You need a persistent and durable storage to trace call activity of an IVR (Interactive Voice Response) system. Call duration is mostly in the 2-3 minutes timeframe. Each traced call can be either active or terminated. An external application needs to know each minute the list of currently active calls, which are usually a few calls/second. Put once per month there is a periodic peak up to 1000 calls/second for a few hours. The system is open 24/7 and any downtime should be avoided. Historical data is periodcally archived to files. Cost saving is a priority for this project. What database implementation would better fit this scenario, keeping costs as low as possible?
 Use DynamoDB with a "Calls" table and a Global Secondary Index on a "IsActive" attribute that is present for active calls only in this way the Global Secondary index is sparese and more effective
 
-161
+197
 A web design company currently runs several FTP servers that their 250 customers use to upload and download large graphic files. They wish to move this system to AWS to make it more scalable, but they wish to maintain customer privacy and keep costs to a minimum.What AWS architecture would you recommend?
 ASK their customers to use an S3 client instead of an FTP client. Create a single S3 bucket. Create an IAM user for each customer. Put the IAM users in a group that has an IAM policy that permits access to subdirectories within the bucket via use of the 'username' Policy variable
 
-162
+198
 You have been asked to design the storage layer for an application. The application requires disk performance of at least 100000 IOPS in addition, the storage layer must be able to survive the loss of an individual disk. EC2 instance, or Availability Zone without any data loss. The volume you provide must have a capacity of at least 3 TB. Which of the following designs will meet these objectives?
 Instantiate an 12 8xlarge instance in us-east-1a create a raid 0 volume using the four 800GB SSD ephemeral disks provide with the instance Configure synchronous block-level replication to an Identically configured instance in us-east-1b
 
-163
+199
 You would like to create a mirror image of your production environment in another region for disaster recovery purposes. Which of the following AWS resources do not need to be recreated in the second region?
 Route 53 Record Sets
 IM1 Roles
 
-164
+200
 Your company runs a customer facing event registration site. This site is built with a 3-tier architecture with web and application tier servers and a MySQL database.The application requires 6 web servers and 6 application tier servers for normal operation, but can run on a minimum of 65% server capacity and a single MySQL database. When deploying this application in a region with three availability zones (AZs) which architecture provides high availablity?
 A web tier deployed across 3 AZs with 2 EC2(Elastic Compute Cloud) instances in each AZ inside an Auto Scaling Group behind an ELB. And an application tier deployed across 3 AZs with 2 EC2 instances in each AZ inside an Auto Scaling Group behind an ELB. And a Multi-AZ RDS deployment.
 
-165
+201
 Your application is using an ELB in front of an Auto Scaling group of web/application servers deployed across two AZs and a Multi-AZ RDS instance for data persistence.The database CPU is often above 80% usage and 90% of I/O operations on the database are reads. To improve performance you recently added a single-node Memcached ElastiCache Cluster to cache frequent DB query results. In the next weeks the overall  workload is expected to grow by 30%. Do you need to change anything in the architecture to manitain the high availiability or the applicaiton with the anticipated additional load why?
 Yes, you should deploy two Memcached ElalticCache Clusters in diffrent AZs because the ROS instance will not be able to handle the load. It me cache node fails.
 
-166
+202
 You are responsible for a legacy web application whose server enviroment is approacing end of life. You would like to migrate the application to AWS as quickly as possible, since the application environment currently has the following limitations:The VM's single 10GB VMDK is almost full. Me virtual network interface still uses the 10Mbps driver, which leaves your 100Mbps WAN connection completely undrutilized. It is currently running on a highly customized. Windows VM within a VMware environment:You do not have me installation media. This is a mission critical application with an RTO(Recovery Time Objective) of 8 hours. RPO(Recovery Point Objective) of 1 hour. How could you best migrate this application to AWS while meeting your business continuity requirements?
 Use th EC2 VM import Connector for vCenter to import the VM into EC2
 
-167
+203
 An international company has deployed a multi-tier web application that relies on DynamoDB in a single region. For regulatory reasons they need disaster recovery capability In a separate region with a Recovery Time Objectove of 2 hours and a Recovery Point Objective of 24 hours.They should synchronize their data on a regular basis and be able to provision me web application rapidly using CLoudFormation.The objective is to minimize changes to the existing web application, control the throughput of DynamoDB used for the synchronization of data and synchronize only the modifed elements. Which design would you choose to meet these requirements?
 Use AWS data Pipeline to schedule a DynamoDB cross region copy once a day. Create a lastupdated attribute in your DynamoDB table that would represent the timestamp of the last update and use it as a filter
 
-168
+204
 Refer to the architecture diagram above of a batch processing solution using Simple Queue Service(SQS) to set up a message queue between EC2 instances which are used as batch processors Cloud Watch monitors the number of Job requests(queued messages) and an Auato Scaling group adds or deletes batch servers automatically based on parameters set in Cloud Watch alarms. You can use this architecture to implement which of the following features in a cost effective and effecient manner?
 Coordinate number of EC2 instances with number of job requests automatically thus improving cost effectiveness
 
-169
+205
 Your company currently has a 2-tier web application running in an on-premises data center. You have experienced several infrastructure failures in the past two months resulting in significant financial losses. Your CIO is strongly agreeing to move the applicaion to AWS. While working on achieving buy-in from the other company executives, he asks you to develop a disaster recovery plan to help improve Business continuity in the short term. He specifies a target Recovery Time Objective(RTO) of 4 hours and  a Recovery Pont Objective(RPO) of 1 hour or less. He alse asks you to implement the solution within 2 weeks. Your database is 200GB in size and you have a 20Mbps internet connection. How would you do this while minimizing costs?
 Create an EBS backed private AMI that includes a fresh install of your application. Develop a CloudFormation template which includes your Mil and the required EC2. Auto-Scaling and ELB resources to support deploying the application across Multiple-Ability Zones. Asynchronously replicate transactions from your onpremises database to a database instance in AWS across a secure VPN connection.
 
-170
+206
 An ERP application is deployed across multiple AZs in a single region. In the event of failure, the Recovery Time Objective(RTO) must be less than 3 hour, and the Recovery Point Objective(RPO) must be 15 minutes the customer realizes that  data corruption occurred roughly 1.5 hours age. What DR strategy could be used to achieve this RTO and RPO in the event of this kind of failure?
 Take hourly DB backups to S3, which transaction logs stored in S3 every 5 minutes
 
-171
+207
 Your startup wants to implement an order fulfillment process for selling  a personalized gadget that needs an average of 3-4 days to produce with some orders taking up to 6 months you expect 10 orders per day on your first day. 1000 orders per day after 6 months and 10000 orders after 12 months. Orders coming in are checked for consistency men dispatched to your manufacturing plant for production quality control packaging shipment and payment processing. If the product does not meet the quality standards at any stage of the process employees may force the process to repeat a step. Customers are notified via email about order status and any critical issues with their orders such as payment failure. Your case architecture includes AWS Elastic Beanstalk for your website with an RDS MySQL instance for customer data and orders.How can you implement the order fulfillment process while making sure that the emails are delivered reliably?
 Use SWF with an Auto Scaling group of activity workers and a decider instance in another Auto Scaling group with min/max=1 .Use the decider instance to send emails to customers
 
-172
+208
 You have deployed a web application targeting a global audience across multiple AWS Regions under the domain name.example.com. You decide to use Route53 Latency-Based Routing to serve web requests to users from the region closest to the user. To provide business continuity in the event of server downtime you configure weighted record sets associated with two web servers in separate Availability Zones per region. During a DR test , you notice that when you disable all web servers in one of the regions Route53 does not automcatically direct all users to the other region. What could be happening?
 You did not setup an http health check for one or more of the weighted resource record sets associated with me disabled web servers.
 You did not set "Evaluate Target Health" to "Yes" on the latency alias resource record set associated with example com in the region where you disabled the servers.
 
-173
+209
 Your company hosts a social media site supporting users in multiple countries. You have been asked to provide a highly available design for the applicaton that leverages multiple regions for the most recently accessed content and latency sensiive portions of the web site. The most latency sensitive component of the application involves reading user preferences to support web site personalication and ad selection. In addition to running your application in multiple regions, which option will support this applications requirements?
 Server user content from S3. CloudFront and use Route53 latency-based routing between ELBS in each region. Retrieve user preferences from a local DynamoDB table in each region and leverage SQS to capture changes to user preferences with SQS workers for propagating updates to each table.
 
-174
+210
 Your system recently experienced down time during the troubleshooting process. You found that a new administrator mistakenly terminated serveral production EC2 instances. Which of the following strategies will help prevent a similar situation in the future?The administrator still must be able to :--launch,start stop, and terminate development resource. --Launch and start production instances
 Leverage resource based tagging along with an IAM user, which can prevent specific users from terminating prduction EC2 resources
 
-175
+211
 A customer has established an AWS Direct Connect connection to AWS. The link is up and routes are being advertised from the customer's end, however the customer is unable to connect from EC2 instances inside its VPS to servers residing in its datacenter. Which of the following options privide a viable solution to remedy meet this situations?
 Enable route propagation to the virtual pinnate gateway(VGW)
 Modify the instances VPC subnet route table by adding a route back to the customer's on-premises environment
 
-176
+212
 Your company previously configured a heavily used, dynamically routed VPN connection between your onpremises data center and AWS. You recently provisioned a DirectConnect connection and would like to start using the new connection. After configuring DirectConnect settings in the AWS Console, which of the following options will provide the most seamless transition for your users?
 Update your VPC route tables to point to the DirectConnect connection configure your DirectConnect router with the appropriate settings verify network traffic is leveraging DirectConnect and then delete the VPN connection
 
-177
+213
 A web company is looking to implement an external payment service into their highly available application deployed in a VPC. Their application EC2 instances are behind a public lacing ELB. Auto scaling is used to add additional instances as traffic increased under normal load the application runs 2 instances in the Auto Scaling group but at peak it can scale 3x in size. The application instances need to communicate with the payment service over the internet which requires whitelisting of all public IP addresses used to communicate with it. A maximum of 4 whitelisting IP addresses are allowed at a time and can be added through an API. How should they architect their solution?
 Route payment requests through two NAT instances setup for High Avaliability and whitelist the Elastic IP addresses attached to the NAT instances.
 
-178
+214
 You are designing the network infrastructure for an application server in Amazon VPC. Users will access all the application instances from the Internet as well as from an on-premises network. The on-premises network is connected to your VPC over an AWS Direct Connect link. How would you design routing to meet the above requirements?
 Configure a single routing table with a default route via the internet gateway. Porpagate specific routes for the on-premises networks via BGP on the AWS Direct Connect customer router. Associate  the routing table with all VPC subnets
 
-179
+215
 You are implementing AWS Direct Connect. You intend to use AWS public service end points such as Amazon S3, across the AWS Direct Connect link. You want other Internet traffic to use your existing link to an Internet Service Provider. What is the correct way to configure AWS Direct connect for access to services such as Amaon S3?
 Create a public interface on your AWS Direct Connect link Redistribute BGP routes into your existing routing infrastructure advertise specific routes for your network to AWS
 
-180
+216
 You have deployed a three-tier web application in a VPC with a CIDR block of 10.0.0.0/28. You initially deploy two web servers, two application servers, two database servers and one NAT instance for a total of seven EC2 instances. The web application and database servers are deployed acrooss two availability zones. You alse deploy an ELB in front of the two web servers, and use Route53 for DNS Web raffle gradually increases in the first few days following the deployment, so you attempt to double the number of instances in each tier of the application to handle the new load unfortunately some of these new instances fail to launch. Which of the following could be the root caused?
 The ELB has scaled-up. Adding more instances to handle the traffic reducing the number of available private IP addresses for new instance launches.
 AWS reserves the first tour and the last IP address in each subnet's CIDR block, so you do not have enough addresses left to launch all of the new EC2 instances
 
-181
+217
 You've been brought in as solutions architect to assist an enterprise customer with their migration of an ecommerce platform to Amazon Virtual Cloud. The previous architect has already deployed a 3-tier VPC.The configuration is as follows 
 VPC vpc-2f8tc447
 IGW ig-2d8bc445
@@ -779,698 +953,698 @@ subnet-9189c6f9 rtb-238bc44b
 You are now ready to begin deploying EC2 instances into the VPC Web servers must have direct access to the internet Applicatoin and database servers cannot have direct access to the internet. Which configuration below will allow you the ability to remotely administer your application and database servers, as well as allow these servers to retrieve updates from the internet?
 Create a bastion and mat instance in subnet-258bc44d and add a route from rtb-238bc44b
 
-182
+218
 You are designing Internet connectivity for your VPC. The Web servers must be available on the internet. The application must have a highly available architecture. Which alternatvies should you consider
 Place all your web servers behind ELB Configure a Route53 CNAME to point to the ELB DNS naem
 Assign BPs to all web servers. Configure a Route53 record set with all EIPs. With health checks and DNS failover.
 
-183
+219
 You are tasked with moving a legacy application from a virtual machine running inside your datacenter to an Amazon VPC. Unfortunately this app requires access to a number of on-premises services and no one who configured the app still works for your company. Even worse there's no documentation for it. What will allow the application running inside the VPC to reach back and access its internal dependencies without being reconfigured?
 An AWS Direct Connect link between  the VPC and the network housing the internal services
 An IP address space that does  not conflict with the one on-premises
 A VM Import of the current virtual machine
 
-184
+220
 You are migrating a legacy client-server appliation to AWS. The application responds to a specific DNS domain(e.g. www.example.com) and has a 2-tier architecture, with multiple application servers and a database server. Remote clients use TCP to connect to the application servers. The application servers need to know the IP address of the clients in order to function properly and are currently taking that information from the TCP socket. A Multi-AZ RDS MySQL instance will be used for the database. During the migration you can change the application code, but you have to file a change request. How would you implement the architecture on AWS in order to maximize scalability and high ability?
 File a change request to implement Proxy Protocol support in the application. Use an ELB with a TCP listener and Proxy Protocol enabled to distribute load on two application servers in different AZs
 
-185
+221
 A newspaper organization has a on-premises application which allows the public to search its back catalogue and retrieve individual newspaper pages via a website written in Java. They have scanned the old newspapers into JPEGs(approx 17TB) and used Optical Character Recognition(OCR) to populate a commercial search product. The hosting platform and software are now end of life and the organization wants to migrate its archive to AWS and produce a cost effiecient architecture and still be designed for availability and durability. Which is the most appropriate?
 Use S3 with standard redundancy to store and serve the scanned files, use CloudSearch for query processing, and use Elastic Beanstalk to host the website across multiple availability zones
 
-186
+222
 A corporate web application is deployed within an Amazon Virtual Private Cloud(VPC) and is connected to the corporate data center via an iPsec VPN. The application must authenticate against the on-premises LDAP server. After authentication, each logged-in user can only access an Amazon Simple Storage Service(S3) keyspace to that user. Which two approaches can satisfy these objectives?
 The application authenticates against LDAP and retrieves the name of an IAM role associated with the user. The application then calls the IAM Security Token Service to assume that IAM role. The application can use the temporary credentials to access the appropriate S3 bucket.
 Develop an identity broker that authenticates against LDAP and then calls IAM Security Token Service to get IAM federated user credentials. The application calls the identity broker to get IAM federated user credentials with access to the appropriate S3 bucket
 
-187
+223
 You are designing a multi-platform web application for AWS. The application will run on EC2 instances and will be accessed from PCs. tablets and smart phones .Supported accessing platforms are Windows. MACOS. IOS and Android. Separate stickly session and SSL certificate setups are required for different platform types which of the following describes the most cost effective and performance efficient architecture setup?
 Assign multiple ELBs to an EC2 instance or group of EC2 instances running thte common components of the web application, one ELB for each platform type Session stickness and SSL termination are done at the ELBs.
 
-188
+224
 Your company has an on-premises multi-tier PHP web application, which recently experienced downtime due to a large burst in web traffic due to a company announcement over the coming days, you are expecting similar announcements to drive similar unpredicatable bursts, and are looking to find ways to quickly improve your infrastructures ability to handle  unexpected increases in traffic.The  application currently consists of 2 tiers. A web tier which consists of a load balancer and serveral Linux Apache web servers as well as a database tier which　hosts a Linux server hosting a MySQL database. Which scenario below will provide full site functionally, while helping to improve the ablility of your application in the short timeframe required?
 Offload traffic from on-premises environment. Setup a CloudFront distribution and configure CloudFront to cache objects from a custom origin. Choose to customize your object cache behavior, and select a TTL that objects should exist in cache.
 
-189
+225
 Your company produces customer commissioned one-of-a-kind skiing helmets combining nigh fashion with custom technical enhancements. Customers can show oft their individuality on the ski slopes and have access to head-up-displays. GPS rear-view cans and any other technical innovation they wish to embed in the helmet. The current manufacturing process is data rich and complex including assessments to ensure that the custom electronics and materials used to assemble the helmets are to the highest standards. Assessments are a mixture of human and automated assemssments you need to add a new set of assessment to model the failure modes of the custom electronics using GPUs with CUD
 Use Amazon Simple Workfow(SWF) 10 manages assessments, movement of data & meta-data. Use an autoscaling group of G2 instances in a placement group
 
-190
+226
 You're running an application on-premises due to its dependency on non-x86 hardware and want to use AWS for data backup. Your backup application is only able to write to POSIX-compatible block-based storage. You have 140TB of data and would like to mount it as a single folder on your file server. Users must be able to access portions of this data while the backups are taking place. What backup solution would be most appropriate for this use case?
 Use Storage Gateway and configure it to use Gateway Stored volumes
 
-191
+227
 You require the ability to analyze a large amount of data, which is stored on Amazon S3 using Amazon Elastic Map Reduce. You are using the ec2 8x large instance type, whose CPSs are mostly idle during processing. Which of the below would be the most cost effecient way to reduce the runtime of the job?
 Use smaller instances that have higher aggregate I/O performance
 
-192
+228
 Your department creates regular analytics reports from your company's log files. All log data is collected in Amazon S3 and processed by daily Amazon Elastic MapReduce(EMR) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse. Your CFO requests that you optimize the cost stucture for this system. Which of the following alternatives will lower costs without compromising average performance fo the system or data integrity for the raw data?
 Use reduced  redundancy storage(RRS) for PDF and csv data in Amazon S3. Add Spot instances to Amazon EMR jobs. Use Reserved Instances for Amazon Redshift
 
-193
+229
 You are the new IT architect in a company that operates a mobile sleep tracking application. When activated at night, the mobile app is sending collected data points of 1 kilobyte every 5 minutes to your backend. The backend takes care of authenticating the user and writing the data points into an Amazon DynamoDB table. Every morning, you scan the table to extract and aggregate last night's data on a per user basis, and store the results in Amazon S3. Users are notified via Amazon SMS mobile push notifications that new data is available, which is parsed and visualized by the mobile app. Currently you have around 100k users who are mostly based out of North America. You have been tasked to optimize the architecture of the backend system to lower cost what would you recommend?
 Create a new Amazon DynamoDB table each day and drop the one for the previous day after its data is on Amazon S3
 Introduce an Amazon SQS queue to buffer writes to the Amazon DynamoDB table and reduce provisioned write throughput
 
-194
+230
 Your website is serving on-demand  training videos to your workforce. Videos are uploaded monthly in high resolution MP4 format. Your workforce is distributed globally often on the move and using company-provided tablets that require the HTTP Live Streaming(HLS) protocol to watch a video. Your company has no video transcoding expertise and it required you may need to pay for a consultant. How do you implement the most cost-efficient architecture without compromising high availability and quality of video delivery?
 Elastic Transcoder to transcode original high-resolution MP4 videos to HLS S3 to host videos with Utecycle Management to archeive original files to Glacier after a few days. CloudFront to serve HLS transcoded videos from S3
 
-195
+231
 You've been hired to enhance the overall security posture for a very large e-commerce site. They have a well architected multi-tier application running in a VPC that uses ELBs in front of both the web and the app tier with static assets served directly from S3. They are using a combination of RDS and DynamoDB for their dynamic data and then archiving nightly into S3 for further processing with EMR. They are concerned because they found questionable log entries and suspect someone is attempting to gain unauthorized access. Which approach provides a cost effective scalable mitigation to this kind of attack?
 Add a WAF tier by creating a new ELB and an AutoScaling group of EC2 instances running a host-based WAF. They would redirect Route 53 to resolve to the new WAF tier ELB. The WAF tier would their pass the traffic to the current web tier. The web tier Security Groups would be updated to only allow traffic from the WAF tier Security Group
 
-196
+232
 You currently operate a web application in the AWS US-East region. The application runs on an auto-scaled layer of EC2 instances and an RDS Multi-AZ database. Your IT security compliance officer has tasked you to develop a reliable and durable logging solution to track changes made to your EC2, IAM and RDS resources. The solution must ensure the integrity and confidentiality of your log data. Which of these solutions would you recommend?
 Create a new CloudTrail trail with one new S3 bucket to store the logs and with the global services option selected. Use IAM roles S3 bucket policies and Multi Factor Authentication(MFA). Delete on the S3 bucket that stores your logs
 
-197
+233
 An enterprise wants to use a third-party SaaS application. The SaaS application needs to have access to issue several API commands to discover Amazon EC2 resources running within the enterprise's account. The enterprise has internal security policies that require any outside access to their environment must conform to the principles of least privileage and there must be controls in place to ensure that the credentials used by the SaaS vendor cannot be used by any other third party. Which of the following would meet all of these conditions?
 Create an IAM role for cross-account access allows the SaaS provider's account to assume the role and assign it a policy that allows only the actions required by the SaaS applicaion
 
-198
+234
 You are designing a data leak prevention solution for your VPC environment. You want your VPC instances to be able to access software depots and distributions on the Internet for product updates. The depots and distributions are accessible via third party CONs by their URLs. You want to explicitly deny any other outbound connections from your VPC instances to hosts on the internet. Which of the following options would you consider?
 Configure a web proxy server in your VPC and enforce URL-based rules for outbound access. Remove default routes
 
-199
+235
 An administrator is using Amazon CloudFormation to deploy a three tier web application that consists of a web tier and application tier that will utilize Amazon DynamoDB for storage when creating the CloudFormation template which of the following would allow the application instance access to the DynamoDB tables without exposing API credentials?
 Create an IAM role that has the required permissions to read and write from the required DynamoDB table and reference the Role in the instance profile property of the application instance
 
-200
+236
 An AWS customer is deploying an application mat is composed of an AutoScaling group of EC2 instances. The customers security policy requires that every outbound connection from these instances to any other service within the customers. Virtual Private Cloud must be authenticated using a unique x509 certificate that constans the specific instanceid. In addition an x 509 certificates must designed by the customer's key management service in order to be trusted for authentication. Which of the following configurations will support these requirements?
 Configure the Auto Scaling group to send an SNS notification of the launch of a new instance to the trusted key management service. Have the key management service generate a signed certificate and send it directly to the newly launched instance
 
-201
+237
 Your company has recently extended its datacenter into a VPC on AWS to add burst computing capacity as needed. Members of your Network Operations Center need to be able to go to the AWS Management Console and administer Amazon EC2 instances as necessary. You don't want to create new IAM users for each NOC member and make those users sign in again to the AWS Management Console. Which option below will meet the needs for your NOC members?
 Use your on-premises SAML 2 O-compliant identity provider(IDP) to grant the NOC members feferated access to the AWS Management Console via the AWS single sign-on(SSO) endpoint
 
-202
+238
 You are design an SSUTLS solution that requires HTTPS clents to be authenticated by the Web server using client certificate authentication. The solution must be resilient. Which of the following options would you consider for configuring the web server infrastructure?
 Configure ELB with TCP listeners on TCP/443. And place the Web servers behind it
 
-203
+239
 You are designing a connectivity solution between on-premises infrastructure and Amazon VPC. Your server's on-premises will be communicating with your VPC instances. You will be establishing IPSec tunnels over the internet. You will be using VPN gateways and terminating the IPsec tunnels on AWS-supported customer gateways. Which of the following objectives would you achieve by implementing an IPSec tunnel as outlined above?
 Data encrytion across the Internet
 Protection of data in transit voer the Internet
 Peer identity authentication between VPN gateway and customer gateway
 Data integrity protection across the Internet
 
-204
+240
 You are designing an intrusion detection prevention(IDS/IPS) solution for a customer web application in a single VPC. You are considering the options for implementing IOS IPS protection for traffic coming from the Internet. Which of the following options would you consider?
 Implement IDS/IPS agents on each instance running in VPC
 Implement a reverse proxy layer in front of web servers and configure IDS/IPS agents on each reverse proxy server
 
-205
+241
 You are designing a photo sharing mibile app the applicaton will store all pictures in a single Amazon S3 bucket. Users will upload pictures from their mobile deivce directly to Amazon S3 and will be able to view and dowload their own pictures directly form Amazon S3. You want to configure security to handle potentially millions of users in the most secure manner possible. What should your server-side application do when a new user registers on the photo-sharing mobile application?
 Record the user's information in Amazon DynamoDB. When the user uses their mobile app create temporary credentials using AWS Security Token Service with appropriate permissions. Store these credentials in the mobile app's memory  and use them to access Amazon S3 Generate new credentials the next time the user runs the mobile app.
 
-206
+242
 You have an applicatioin running on an EC2 instance which will allow users to download files from a private S3 bucket using a pre-assigned URL. Before generating the URL the application should verify the existence of the file in S3. How should the application use AWS credentials to access the S3 bucket securely?
 Create an IAM role for EC2 that allows list access to objects in the S3 bucket. Launch the instance with the role, and retrieve the role's credentials from the EC2 instance metadata
 
-207
+243
 You are designing a social media site and are considering how to mitigate distributed denial-of-server (DDoS) attacks. Which of the below are viable mitigation techniques?
 Use an Amazon CloudFront distribution for both static and dynamic content
 Use an Elastic Load Balancer with auto scaling groups at the web. App and Amazon Relational Database Service(RDS) tiers
 Add alert Amazon CloudWatch to look for high Network in and CPU utilization
 
-208
+244
 A benefits enrollment companyis hosting a 3-tier web application running in a VPC on AWS which includes a NAT instance in the public Web tier. There is enough provisioned capacity for the expected workload for the new fiscal year benefit enrollment period plus some extra overhead.  Enrollment proceeds nicely for two days and then the web tier becomes unresponsive, upon investigation using CloudWatch and other monitoring tools. It is discovered that there is an extremely large and unanticipated amount of inbound traffic coming from a set of 15 specific IP addresses over port 80 from a country where the benefits company has no customers. The web tier instances are so overloaded that benefit enrollment administrators cannot even SSH into them. Which activity would be useful in defending against this attack?
 Create an inbound NACL(Network Access control list) associated with the web tier subnet with deny rules to block the attacking IP addresses
 
-209
+245
 Your fortune 500 company has under taken a TCO analysis evaluating the use of Amazon S3 versus acquiring more hardware. The outcome was that all employees would be granted access to use Amazon S3 for storge of their personal documents. Which of the following will you need to consider so you can set up a solution that incorporates single sign-on from your corporate AD or LDAP directory and restricts access for each user to a designated user folder in a bucket?
 Setting up a federation proxy or identity provider
 Using AWS Security Token Service to generate temporary tokens
 Configuring IAM role
 
-210
+246
 Your company polices require encryption of sensitive data at rest. You are considering the possible options for protecting data while storing it at rest on an EBS data volume, attached to an EC2 instance. Which of these options would allow you to encrypt your data at rest?
 Implement third party volume encrytion tools
 Encrypt data inside your appliations before storing it on EBS
 Encrypt data using native data encryption drivers at the file system level
 
-211
+247
 You have a periodic image analysis application that gets some files in input analyzes them and for each file writes some data in output to a ten file the number of files in input per day is high and concentrated in a few hours of the day. Currently you have a server on EC2 with a large EBS volume that hosts the input data and the results it takes almost 20 hours per day to complete the process. What services could be used to reduce the elaboration time and improve the availability of the solution?
 S3 to store I/O files. SQS to distribute elaboration commands to a group of hosts working in parallel. Auto scaling to dynamically size the group of hosts depending on the length of the SQS queue
 
-212
+248
 You require the ability to analyze a customer's clickstream data on a website so they can do behavioral analysis. Your customer needs to know what sequence of pages and ads their customer clicked on. This data will be used in real time to modify the page layouts as customers click through the site to increae stickness and advertising click-through. Which option meets the requirements for captioning and analyzing this data?
 Push web clicks by session to Amazon Kinesis and analyze behavior using Kinesis workers
 
-213
+249
 An AWS customer runs a public blogging website. The site users upload two million blog entries a month. The average blog entry size is 200 KB. The access rate to blog entries drops to negligible 6 months after publication and users rarely access a blog entry 1 year after publication. Additionally, blog entries have a high update rate during the first 3 months following publication, this drops to no updates after 6 months. The customer wants to use CloudFront to improve his user's load times. Which of the following recommendations would you make to the customer?
 Create a CloudFront distribution with S3 access restricted only to the CloudFront identity and partition the blog entry's location in S3 according to the month it was uploaded to be used with CloudFront behaviors
 
-214
+250
 Your company is getting ready to do a major public announcement of a social media site on AWS. The website is running on EC2 instances deployed across multiple Availability Zones with a Multy-AZ RDS MySQL Extra Large DB insance. The site performs a high number of small reads and writes per second and relies on an eventual consistency model. After comprehensive tests you discover that there is read contention on RDS MySQL. Which are the best approadches to meet these requirements?
 Deploy ElasticCache in-memory cache running in each availability zone
 Add an RDS MySQL read replica in each availability zone
 
-215
+251
 A company is running a batch analysis every hour on their main transactiional DB, running on an RDS MySQL instance to popullate their central Data Warehourse, running on Redshift During the execution of the batch their transactional applications are very slow. When the batch completes they need to upate the top management dashboard with the new data. The dashboard is produced by another system running on-premises that is currently started when a manually-sent email notifies that an update is required. The on-premises system cannot be modified because is managed by another team. How would you optimize this scenario th solve performance issues and automate the process as much as possible?
 Create an RDS Read Replica for the batch analysis and SNS to notify me on-premises system to update the dashboard
 
-216
+252
 You are impementing a URL whitelisting system for a company that wants to restrict outbound HTTP'S connections to specific domains from their EC2-hosted applications you deploy a single EC2 instance running proxy software and configure it to accept traffic from all subnets and EC2 instances in the VPC. You configure the proxy to only pass through traffic to domain that you define in its whitelist configuration. You have a nightly maintenance window or 10 minutes where all instances fetch new software updates. Each update is about 200MB in size and there are 500 instances in the VPC that routinely fetch updates. After a few days you notice that some machines are failing to successfully download som, but not all of their updates within the maintenance window. The download URLs used for these updates are  correctly listed in the proxy's whitelist configuration and you are able to access them manually using a web browser on the instances. What might be happening?
 You are running the proxy on an undersized EC2 instance type, so network throughput is not suffecient for all instances to download their updates in time
 You are running the proxy on a affilelentiy-sized EC2 instance in a private subnet and its network throughput is being throttled by a NAT running on an undersized EC2 instance
 
-217
+253
 To serve Web traffic for a popular product your chief financial officer and IT director have purchased 10 m1.large heavy utilization Reserved instances(RIs) evently spread across two availability zones. Route 53 is used to deliver the traffic to an Elastic Load Balancer(ELB). After several months, the product grows even more popular and you need additional capacity. As a result, your company purchases two C3.2xlarge medium utilization Ris. You register the two c2.2xlarge instances with your ELB and quickly find that the m1.large instances are at 100% of capacity and the c3.2xlarge instances have significant capacity that's unused. Which option is the most cost effective and uses EC2 capacity most effectively?
 Use a separate ELB for each instance type and distribute load to ELBs with Route 53 weighted round robin
 
-218
+254
 A read only news reporting site with a combinded web and applicaton tier and a database tier that receives large and unperdicatable traffic demands must be able to respond to these traffic fluctuations automatically. What AWS services should be used meet these requirements?
 Stateless instances for the web and application tier synchronized using Elasticache Memcached in an autoscaling group monitored with CloudWatch. And RDS with read replicas
 
-219
+255
 You are running a news website in the eu-west-1 region that updates every 15 minutes. The website has a world-wide audience it uses an Auto Scaling group behind an Elastic Load Balancer and an Amazon RDS database Static content resides on Amazon S3, and is distributed through Amazon CloudFront. Your Auto Scaling group is set to trigger a scale up event at 60% CPU utilization, you use an Amazon RDS extra large DB instance with 10000 Provisioned IOPS its CPU utilization is around 80%. While freeable memory is in the 2GB range.Web analytics reports show that the average load time of your web pages is around 1.5 to 2 seconds, but your SEO consultant wantns to bring down the average load time to under 0.5 seconds. How would you improve page load times for you uses?
 Add an Amazon ElatiCache caching layer to your application for storing sessions and frequent DB queries
 Configure Amazon CloudFront dynamic content support to enable caching of re-usable content from your site
 Switch Amazon RDS database to the high memory extra large instance type
 
-220
+256
 A large real-estate brokerage is exploring the option of adding a cost-effective loacation based alert to their existing mobile application. The application backend insfrastructure currently runs on AWS. User who opt in to this service will receive alerts on their mobile device regarding real-estate others in proximity to their location. For the alerts to be relevant delivery time needs to be in the low minute count the existing mobile app has 5 million users across the US. Which one of the following architectural suggestions would you make to the customer?
 The mobile application will send device location using SQS. EC2 instances will retrieve the relevant others from DynamoDB. AWS Mobile Push will be used to send offers to the mobile application
 
-221
+257
 A company is building a voting system for a popular TV show, viewers will watch the performacnes then visit the show's website to vote for their favorite performer. It is expected that in a short period of time after the show had finished. The site will receive millions of visitors. The visitors will first login to the site using their Amazon.com credentials and then submit their vote. After the voting is completed, the page will display the vote totals. The company needs to build the site such that can handle the rapid influx of traffic while maintaining good performance but also wants to keep costs to a minimum. Which of the design patterns below should they use?
 Use CloudFront and an Elastic Load Balancer in front of an auto-scaled set of web servers, the web servers will first call the login. Wich Amazon service to authenticate the user, the web servers win process the users vote and store the result into an SQS queur using IAM Roles for EC2 instances to gain permissions to the SQS queue. A set of application servers will then retrieve the items from the queue and store the result into a DynamoDB table
 
-222
+258
 You are developing a new  mobile application and are considering storing user preferences in AWS.2w. This would provide a more uniform cross-device experience to users using multple mobile devices to access the application. The preference data for each user is estimcated to be 50KB in size. Additionally 5 million customers are expected to use the application on a regular basis. The solution needs to be cost-effective, highly available, scalable and secure, how would you design a solution to meet the above requirements?
 Setup a DynamoDB  table with an item for each user having  the necessary attributes to hold  the user preferences. The mobile application will query the user preferences directly from the DynamoDB table. Utilize STS, Web Identity Federation, and DynamoDB Fine Grained Access Control to authenticate and authorize access
 
-223
+259
 Your team has a tomcat-based  Java application you need to deploy into development, test and production environments. After some research, you opt to use Elastic Beanstalk due to its tight integration with your developer tools and RDS due to its ease of management. Your QA team lead points out that you need to roll a sanitized set of production data into your environment on a nightly basis. Similarly, other software teams in your org want access to that same restored data via their EC2 instances in your VPC. The optimal setup for persistence and security that meets the above requirements would be the following.
 Create your RDS instance separately and pass its DNS name to your app's DB connections string as an environment variable. Create a security group for client machines and add it as a valid source for DB traffic to the security group of the RDS instance itself
 
 
-224
+260
 You are looking to migrate your Development(DEV) and Test environments to AWS. You have decided to use separate AWS accounts to host each environment. You plan to link each accounts bill to a Master AWS account using Consolidated Billing. To make sure you keep within budget , you would like to implement a way for administrators in the Master account to have access to stop, delete and/or terminate resources in both the Dev and Test accounts. Identity which option will allow you to achieve this goal?
 Create IAM users in the Master account Create cross-account roles in the Dev and Test accounts that have full amdin permissions and grant the Master account access
 
-225
+261
 Your customer is willing to consolidate their log streams (access logs application logs security logs ect.) in one single system. Once consolidated, the customer wants to analyze these logs in real time based on heuristics. From time to time, the customer needs to validate heuristics, which requires going back to data samples extracted from the last 12 hours? What is the best approach to meet your customer's requirements?
 Send all the log events to Amazon Kinesis develop a client process to apply heuristics on the logs Configure Amazon Cloud Trail to receive custom logs, use EMR to apply heuristics the logs
 
-226
+262
 You deployed your company website using Elastic Beanstalk and enabled log file rotation to S3. An Elastic Map Reduce job is periodically analyzing the logs on S3 to build a usage dashboard that you share with your CIO. You recently improved overall performance of the website using CloudFront for dynamic content delivery and your website as the origin. After this architectural change, the usage dashboard shows that the traffic on your website dropped by an order of magnitude. How do you fix your usage dashboard?
 Enable CloudFront to deliver access logs to S3 and use them as input of the Elastic Map Reduce job
 
-227
+263
 You are running a successful multitier web application on AWS and your marketing department has asked you to add a reporting tier to the application. The reporting tier will aggregate and publish status reports every 30 minutes from user-generated information that is being stored in your  web application's database. You are currently running a Multi-AZ RDS MySQL instance for the database tier. You also have implemented Elasticache as a database caching layer between the application tier and database tier. Please select the answer that will allow you to successfully implement the reporting tier with as little impact as possible to your database.
 Launch a RDS Read Replica connected to your Multi-AZ master database and generate reports by querying the Read Replica
 
-228
+264
 A web company is looking to implement an instrusion detection and prevention system into their deployed VPC. This platform should have the ability to scale to thousands of instances running inside of the VPC. How should they architect their solution to achieve these goals?
 Configure each host with an agent that collects all network traffic and sends that traffic to the IDS/IPS platform for inspection
 
-229
+265
 A web-startup runs its very successful social news application on Amazon EC2 with an Elastic Load Balancer, an Auto-Scaling group of Java/Tomcat application-servers, and DynamoDB as data store. The main webapplication best runs on m2.xlarge instance since it is highly memory-bound. Each new deployment requires semi-automated creation and testing of a new AMI for the application servers which takes quite a while and is therefore only done once per week. Recently, a new chat feature has been implemnented in nodejs and wails to be integrated in the architecture. First tests show that the new component is CPU bound. Because the company has some experience with using Chef, they decided to streamline the deployment process and use AWS Ops Works as an application life cycle tool to simplify management of the application and reduce the deployment cycles. What configuration in AWS Ops Works is necessary to integrate the new chat module in the most cost-efficient and flexible way?
 Create one AWS Ops Works stack, create two AWS Ops Works layers, create one custom recipe
 
-230
+266
 Your firm has uploaded a large amount of aerial image data to S3 in the past, in your on-premises environment, you used a dedicated group of servers to oaten process this data and used RabbitMQ-An open source messaging system to get job information to the servers. Once processed the data would go to tape and be shipped offsite. Your manager told you to stay with the current design, and leverage AWS archival storage and messaging services to minimize cost. Which is correct?
 Change the storage class of the S3 objects to Reduced Redundancy Storage. Setup Auto-Scaled workers triggered by queue depth that use spot instances to process messages in SQS. Once data is processed, change the storage class of the S3 objects to Glacier
 
-231
+267
 What does Amazon S3 stand for?
 Simple Storage Service
 
-232
+268
 You must assign each server to at least ___ security group
 1
 
-233
+269
 Before I delete an EBS volume, what can I do if I want to recreate the volume later?
 Store a snapshot of the volume
 
-234
+270
 Select the most correct, answer: The device name /dev/sda1 (within Amazon EC2) is ___
 Reserved for the root device
 
-235
+271
 If I want an instance to have a public IP address, which IP address should I use?
 Elastic IP Address
 
-236
+272
 What does RRS stand for when talking about S3?
 Reduced Redundancy Storage
 
-237
+273
 All Amazon EC2 instances are assigned two IP addresses at launch, out of which one can only be reached from within the Amazon EC2 network?
 Private IP address
 
-238
+274
 What does Amazon SWF stand for?
 Simple Work Flow
 
-239
+275
 What is the Reduced Redundancy option in Amazon S3?
 Less redundancy for a lower cost
 
-240
+276
 Fill in the blanks: Resources that are created in AWS are identified by a unique identifier called an ___
 Amazon Resource Name
 
-241
+277
 If I write the below command, what does it do?
 ec2-run ami-e3a5408a -n 20 -g appserver
 Start twenty instances as members of appserver group
 
-242
+278
 While creating an Amazon RDS DB, your first task is to set up a DB ___ that controls what IP addresses or EC2 instances have access to your DB instance.
 Security Group
 
-243
+279
 When you run a DB instance as a Multi-AZ deployment, the ___ serves database writes and reads
 primary
 
-244
+280
 Every user you create in the IAM system starts with ___
 NO permissions
 
-245
+281
 Can you create IAM security credentials for existing users?
 Yes, existing users can have security credentials associated with their account
 
-246
+282
 What does Amaon EC2 provide?
 Virtual servers in the Cloud
 
-247
+283
 Amazon SWF is designed to help users ...
 Coordinate synchronous and asynchronous tasks which are distributed and fault tolerant
 
-248
+284
 Can I control it and when MySQL based RDS instance is upgraded to new supported versions?
 Yes
 
-249
+285
 If I modify a DB instance or the DB parameter group associated with the instance, should I reboot the instance for the changes to take effect?
 Yes
 
-250
+286
 When you view the block device mapping for your instance, you can see only the EBS volumes, not the instance store volumes
 TRUE
 
-251
+287
 By default, EBS volumes that are created and attached to an instance at launch are deleted when that instance is terminated. You can modify this behavior by changing the value of the flag ___ to false when you launch the instance
 DeleteOnTermination
 
-252
+288
 What are the initial settings of an user created security group?
 Allow no inbound traffic and Allow all outbound traffic
 
-253
+289
 Will my standby RDS instance be in the same Region as my primary?
 Yes
 
-254
+290
 What does Amazon Elastic Beanstalk provide?
 An application container on top of Amazon Web Services
 
-255
+291
 True or False: When using IAM to control access to your RDS resources, the key names that can be used are case sensitive. For example, aws:CurrentTime is NOT equivalent to AWS:currenttime
 FALSE
 
-256
+292
 What will be the status of the snapshot until the snapshot is complete.
 pending
 
-257
+293
 Can we attach an EBS volume to more than one EC2 instance at the same time?
 No
 
-258
+294
 True or False: Automated backups are enabled by default for a new DB instance
 TRUE
 
-259
+295
 What does the AWS Storage Gateway provide?
 It allows to integrate on-premises IT environments with Cloud Storage
 
-260
+296
 Amazon RDS automated backups and DB Snapshots are currently supported for only the ___ storage engine
 InnoDB
 
-261
+297
 How many relational database engines does RDS currently support?
 Three: MySQL, Oracle and Microsoft SQL Serer
 
-262
+298
 Fill in the blanks: The base URI for all requests for instance metadata is ___
 http://169.254.169.254/latest/
 
-263
+299
 While creating the snapshots using the command line tools, which command should I be using?
 ec2-create-snapshot
 
-264
+300
 Typically, you want your application to check whether a request generated an error before you spend  any time processing results. The easiest way to find out if an error occured is to look for an ___ node in the reponse from the Amazon RDS API.
 Error
 
-265
+301
 What are thte two permission types used by AWS?
 User-based and Resource-based
 
-266
+302
 In the Amazon cloudwatch, which metric should I be checking to ensure that your DB instance has enough free storage space?
 FreeStorageSpace
 
-267
+303
 Amazon RDS DB snapshots and automated backups are stored in 
 Amazon S3
 
-268
+304
 What is the maximum key length of a tag?
 128 Unicode characters
 
-269
+305
 Groups can't ___
 be nested at all
 
-270
+306
 You must increase storage size in increments of at least ___%
 10
 
-271
+307
 Changes to the backup window take effect ___
 immediately
 
-272
+308
 Using Amazon CloudWatch's Free Tier, what is the frequency of metric updates which you receive?
 5 minutes
 
-273
+309
 Which is the default region in AWS?
 us-east-1
 
-274
+310
 What are the Amazon EC2 API tools?
 Command-line tools to the Amazon EC2 web service
 
-275
+311
 What are the two types of licensing options available for using Amazon RDS for Oracle?
 BYOL and License inscluded
 
-276
+312
 What does a "Domain" refer to in Amazon SWF?
 A collection of related  Workflows
 
-277
+313
 EBS Snapshots occur ___
 Asynchronously
 
-278
+314
 Disabling automated backups ___ disable the point-in-time recovery
 will
 
-279
+315
 Out of the stripping options available for the EBS volumes, which one has the following disadvantage: Doubles the amount of I/O requrired from the instance to EBS compared to RAID 0, because you're mirroring all wirtes to a pair of volumes, limiting how much you can stripe.
 RAID 10
 
-280
+316
 Typically, you want your application to check whether a request generated an error before you spend any time processing results. The easiest way to find out if an error occurred is to look for an ___ node in the reponse from the Amazon RDS API.
 Error
 
-281
+317
 Is creating a Read Replica of another Read Replica supported?
 No
 
-282
+318
 Can Amazon S3 uploads resume on failure or do they need to restart?
 Resume on failure
 
-283
+319
 Which of the following cannot be used in Amazon EC2 to control who has access to specific Amazon EC2 instances?
 IAM System
 
-284
+320
 Fill in the blanks: ____ let you categorize your EC2 resources in different ways, for example, by purpose, owner, or environment
 Tags
 
-285
+321
 How can I change the security group membership for interfaces owned by other AWS, such as Elastic Load Balancing?
 By using the service specific console or API/CLI commands
 
-286
+322
 What is the maximum write throughput I can provision for a single Dynamic DB table?
 Dynamic DB is designed to scale without limits, but if you go beyond 10000 you have to contact AWS first
 
-287
+323
 What does the following command do with respect to the Amazon EC2 security groups?
 ec2-revoke RevokeSecurityGroupingress
 Removes one or more rules from a security group
 
-288
+324
 Can a 'user' be associated with multiple AWS accounts?
 No
 
-289
+325
 True or False: Manually created DB Snapshots are deleted after the DB instance is deleted
 FALSE
 
-290
+326
 Can I move a Reserved instance from one Region to another?
 No
 
-291
+327
 What is Amazon Glacier?
 A low-cost storage service that provides secure and durable storage for data archiving and backup
 
-292
+328
 What is the durability of S3 RRS?
 99.99%
 
-293
+329
 What does specifying the mapping /dev/sdc=none when launching an instance do?
 Prevents /dev/sdc from attaching to the instance
 
-294
+330
 Is Federated Storage Engine currently supported by Amazon RDS for MySQL?
 No
 
-295
+331
 Is there a limit to how many groups a user can be in?
 Yes for all users
 
-296
+332
 True or False: When you perform a restore operation to a point in time or from a DB Snapshot, a new DB instance is created with a new endpoint
 TRUE
 
-297
+333
 A/An ___ acts as a firewall that controls the traffic allowed to reach one or more instances
 security group
 
-298
+334
 Will my standby RDS instance be in the same Availability Zone as my primary?
 No
 
-299
+335
 While launching an RDS DB instance, on which page I can select the Availability Zone?
 ADDITIONAL CONFIGURATION
 
-300
+336
 What does the following command do with respect to the Amazon EC2 security groups?
 ec2-create-group CreateSecurityGroup
 Creates a new security group for use with your account
 
-301
+337
 In the Launch DB instance Wizard, where can I select the backup and maintenance options?
 Under MANAGEMENT OPTIONS
 
-302
+338
 What happens to the data on an instance if the instance reboots(intentionally or unintentionally)?
 Data persists
 
-303
+339
 How many types of block devices does Amazon EC2 support ?
 2
 
-304
+340
 Provisioned IOPS Costs: you are charged for the IOPS and storage whether or not you use them in a given month
 TRUE
 
-305
+341
 IAM provides several policy  templates you can use to automatically assign permissions to the groups you create. The ___ policy template gives the Admins group permission to access all account resources, except your AWS account information
 Power User Access
 
-306
+342
 While performing the volume status checks, if the status is insufficient-data, what does it mean?
 the checks may still be in progress on the volume
 
-307
+343
 IAM's Policy Evaluation Logic always starts with a default ____ for every request, except for those that use the AWS account's root security credentials.
 Deny
 
-308
+344
 By default, when an EBS volume is attached to a Windows instance, it may show up as any drive letter on the instance. You can change the settings of the ____ to set the drive letters of the EBS volumes per your specifications
 Ec2Config Service
 
-309
+345
 For each DB instance class, what is the maximum size of associated storage capacity?
 1TB
 
-310
+346
 SQL Server ____ store logins and passwords in the master database
 does
 
-311
+347
 What is Oracle SQL Developer?
 A graphical Java tool distributed without cost by Oracle
 
-312
+348
 Does Amazon RDS allow direct host access via Telnet, Secure Shell(SSH), or Windows Remote Desktop Connection?
 No
 
-313
+349
 To view information about an Amazon EBS volume, open the Amazon EC2 console at https://consolel.aws.amazon.com/ec2/, click ____ in the navigation pane
 Volumes
 
-314
+350
 You must increase storage size in increments of at least ____%
 10
 
-315
+351
 Using Amazon IAM, can I give permission based on organizational groups?
 Yes always
 
-316
+352
 While creating the snapshots using the API, which Action should I be using?
 CreateSnapshot
 
-317
+353
 What is an isolated database environment running in the cloud(Amazon RDS) called?
 DB instance
 
-318
+354
 While signing in REST/Query requests, for additional security, you should transmit your requests using Secure Sockets Layer(SSL) by using ____
 HTTPS
 
-319
+355
 What happens to the I/O operations while you take a database snapshot?
 I/O operations to the database are suspended for a few minutes while the backup is in progress
 
-320
+356
 Read Replicas require a transactional storage engine and are only supported for the ____ storage engine
 InnoDB
 
-321
+357
 When running my DB instance as a Mullti-AZ deployment, can I use the standby for read or write operations?
 No
 
-322
+358
 When should I choose Provisioned IOPS over Standard RDS storage?
 If you use production online transaction processing(OLTP) workloads
 
-323
+359
 In the 'Detailed' monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send ____ minutte metrics to Amazon CloudWatch
 1
 
-324
+360
 What is the minimum charge for the data transferred between Amazon RDS and Amazon EC2 instances in the same Availability Zone?
 No charge. It is free
 
-325
+361
 Are Reserved instances available for Multi-AZ Deployments?
 Yes for all instance types
 
-326
+362
 Which service enables AWS customers to manage users and permissions in AWS?
 AWS Identity and Access Management(IAM)
 
-327
+363
 Which Amazon Storage behaves like raw, unformatted, external block devices that you can attach to your instances?
 Amazon EBS
 
-328
+364
 Which Amazon service can I use to define a virtual network that closely resembles a traditional data center?
 Amazon VPC
 
-329
+365
 Fill in the blanks: ____ let you categorize your EC2 resources in different ways, for example, by purpose, owner, or environment
 Tags
 
-330
+366
 What is the command line instruction for running the remote desktop client in Windows?
 mstsc
 
-331
+367
 Amazon RDS automated backups and DB Snapshots are currently supported for only the ____ storage engine
 InnoDB
 
-332
+368
 MySQL installations default to port ____
 3306
 
-333
+369
 If you have chosen Multi-AZ deployment, in the event of a planned or unplanned outage of your primary DB instance, Amazon RDS automatically switches to the standby replica. The automatic failover mechanism simply changes the ____ record of the main DB instance to point to the standby DB instance.
 CNAME
 
-334
+370
 If I want to run a database in an Amazon instance, which is the most recommanded Amazon storage option?
 Amazon EBS
 
-335
+371
 In regards to IAM you can edit user properties later, but you cannot use the console to change the ____
 user name
 
-336
+372
 Can I test my DB instance against a new version before upgrading?
 No
 
-337
+373
 True or False: If you add a tag that has the same key as an existing tag on a DB instance, the new value overwrites the old value
 TRUE
 
-338
+374
 Can I use Provisioned IOPS with VPC?
 Yes for all RDS instances
 
-339
+375
 Making your snapshot  public shares all snapshot data with everyone. Can the snapshots with AWS Marketplace product codes be made public?
 No
 
-340
+376
 Fill in the blanks: To ensure failover capabilities, consider using a ___ for incoming traffic on a network interface.
 secondary private IP
 
-341
+377
 If I have multiple Read Replicas for my master DB instance and I promote one of them, what happens to the rest of the Read Replicas?
 The remaining Read Replicas will still replicate from the older master DB instance
 
-342
+378
 What does Amazon CloudFormation provide?
 A template to map network resources for Amazon Web Services
 
-343
+379
 Can I encrypt connections between my application and my DB instance using SSL?
 Yes
 
-344
+380
 What are the four levels of AWS Premium Support?
 Basic, Developer, Business, Enterprise
 
-345
+381
 What can I access by visiting the URL: http://status.aws.amazon.com/ ?
 AWS Service Health Dahsboard
 
-346
+382
 Please select the Amazon EC2 resource which cannot be tagged.
 Elastic IP addresses
 
-347
+383
 Can the string value of 'Key' be prefixed with :aws: ?
 No
 
-348
+384
 Because of the extensibility limitations of striped storage attached to Windows Server, Amazon RDS does not currently support increasing storge on a ____ DB instance.
 SQL Server
 
-349
+385
 Through which of the following interfaces is AWS Identity and Access Management available?
 A) AWS Management Console
 B) Commmand line interface (CLI)
@@ -1478,214 +1652,214 @@ C) IAM Query API
 D) Existing libraries
 All of the above
 
-350
+386
 Slect the correct statement
 In Amazon EC2, the private IP addresses only returned to Amazon EC2 when the instance is stopped or terminated
 In Amazon VPC, an instance retains its private IP addresses when the instance is stopped
 In Amazon EC2, the private IP address is associated exlusively with the instance for its lifetime
 
-351
+387
 How are the EBS snapshots saved on Amazon S3?
 Incrementally
 
-352
+388
 What is the type of monitoring data(for Amazon EBS volumes) which is available automatically in 5-minute periods at no charge called?
 Basic
 
-353
+389
 The new DB instance that is created when you promote a Read Replica retains the backup window period.
 TRUE
 
-354
+390
 What happens when you create a topic on Amazon SNS?
 The topic is created, and it has the name you specified for it
 An ARN (Amazon Resource Name) is created
 
-355
+391
 Can I delete  a snapshot of the root device of an EBS volume used by a registered AMI?
 No
 
-356
+392
 What is the maximum response time for a Business level Premium Support case?
 1 hour
 
-357
+393
 The ____ service is targeted at organizations with multiple users or systems that use AWS products such as Amazon EC2, Amazon SimpleDB, and the AWS Management Console
 AWS Identity and Access Management
 
-358
+394
 True or False: Without IAM, you cannot control the tasks a particular user or sytem can do and what AWS resources they might use
 TRUE
 
-359
+395
 When you use the AWS Management Console to delete an IAM use, IAM also deletes any signing certificates and any access keys belonging to the user
 TRUE
 
-360
+396
 When automatic failover occurs, Amazon RDS will emit a DB instance event to inform you that automatic failover occurred. You can use the ____ to return information about events related to your DB instance
 DescribeEvents
 
-361
+397
 What is the default maximum number of MFA devices in use per AWS account(at the root account level)?
 1
 
-362
+398
 Do the Amazon EBS volumes persist independently from the running life of an Amazon EC2 instance?
 Only if instructed to when created
 
-363
+399
 Can we attach an EBS volume to more than one EC2 instance at the same time?
 No
 
-364
+400
 Select the correct set of options. These are the initial settings for the default security group:
 Allow no inbound traffic, Allow all outbound traffic and Allow instances associated with this security group to talk to each other
 
-365
+401
 What does Amazon Route53 provide?
 A scalable Domain Name System
 
-366
+402
 What does Amazon ElastiCache provide?
 A managed in-memory cache service
 
-367
+403
 How many Elastic IP by default in Amazon Account?
 5 Elastic IP
 
-368
+404
 What is a Security Group?
 A firewall for inbound traffic, built-in around every Amazon EC2 instance
 
-369
+405
 The one-time payment for Reserved instances is ____ refundable if the reservation is cancelled.
 never
 
-370
+406
 Please select the Amazon EC2 resource which can be tagged
 Amazon EBS snapshots
 
-371
+407
 If an Amazon EBS volume is the root device of an instance, can I detach it without stopping the instance?
 No
 
-372
+408
 If you are  using Amazon RDS Provisioned IOPS storage with MySQL and  Oracle database engines, you can scale the throughput of your database instance by specifying the IOPS rate from ____
 1000 to 10000
 
-373
+409
 Every user you create in the IAM sytem starts with ___
 no permissions
 
-374
+410
 After an Amazon VPC instance is launched, can I change the VPC security groups it belongs to?
 Yes, you can
 
-375
+411
 A ____ is an individual, system, or application that interacts with AWS programmatically
 Role
 
-376
+412
 Select the correct statement
 You can't terminate, stop, or delete a resource based solely on its tags
 
-377
+413
 Amazon EC2 has no Amazon Resource Names(ARNs) because you can't specify a particular Amazon EC2 resource in an IAM policy.
 False
 
-378
+414
 Can I initiate a "forced failover" for my MySQL Multi-AZ DB instance deployment?
 Yes
 
-379
+415
 A group can contain many users. Can a user belong to multiple groups?
 Yes always
 
-380
+416
 Is the encryption of connections between my application and my DB instance using SSL for the MySQL server engines available?
 Yes
 
-381
+417
 Which AWS instance address has the following characteristics? If you stop an instance, its Elastic IP address is unmapped, and you must remap it when you restart the instance.
 EC2 Addresses
 
-382
+418
 True or False: Common points of failures like generators and cooling equipment are shared across Availability Zones.
 FALSE
 
-383
+419
 Please select the most correct answer regarding the persistence of the Amazon instance store
 The data on an instance store volume persists only during the life of the associated Amazon EC2 instance
 
-384
+420
 Multi-AZ deployment ____ supported for Microsoft SQL Server DB instances.
 is planned to be in 2014
 
-385
+421
 Security groups act like a firewall at the instance level, whereas _____ are an additional layer of security that act at the subnet level.
 network ACLs
 
-386
+422
 What does Amazon Elastic Beanstalk provide?
 An application container on top of Amazon Web Services
 
-387
+423
 Is the SQL Server Audit feature supported in the Amazon RDS SQL Server engine?
 No
 
-388
+424
 Are you able to integrate a multi-factor token service with the AWS Platform?
 Yes, using the AWS multi-factor token devices to authenticate users on the AWS platform
 
-389
+425
 My Read Replica appears "stuck" after a Multi-AZ failover and is unable to obtain or apply updates from the source DB instance. What do I do ?
 You will need to delete the Read Replica and create a new one to replace it
 
-390
+426
 Which DNS name can only be resolved within Amazon EC2?
 Private DNS name
 
-391
+427
 If your DB instance runs out of storage space or file system resources, its status will change to ___ and your DB instance will no longer be available
 storage-full
 
-392
+428
 Is it possible to access your EBS snapshots?
 Yes, through the Amazon EC2 APIs
 
-393
+429
 Does Amazon RDS for SQL Server currently support importing data into the msdb database?
 No
 
-394
+430
 Does Route 53 support MX Records?
 Yes
 
-395
+431
 Which Amazon storage do you think is the best for my database-style appliations that frequently encounter many reads and writes across the dataset?
 Amazon EBS
 
-396
+432
 Select the correct set of steps for exposing the snapshot only to specific AWS accounts
 SelectPrivate, enter the IDs of those AWS accounts, and clickSave
 
-397
+433
 Is decreasing the storage size of a DB instance permitted?
 No
 
-398
+434
 In the context of MySQL, version numbers are organized as MySQL version=X.Y.Z What does denote here?
 major version
 
-399
+435
 It is advised that you watch the Amazon CloudWatch ____ metric (available via the AWS Management Console or Amazon Cloud Watch APIs) carefully and recreate the Read Replica should it fall behind due to replication errors
 Replica Lag
 
-400
+436
 Can the string value of 'Key' be prefixed with laws?
 No
 
-401
+437
 By default what are ENIs that are automatically created and attached to instances usng the EC2 console set to do when the attached instance terminates?
 Terminate
 
